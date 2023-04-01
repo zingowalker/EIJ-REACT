@@ -14,7 +14,10 @@ const Navbar = () => {
                     {/* <img src='./logo.jpg' alt="logo" /> */}
                     EIJ
                 </a>
-                <div className={isOpen ? "menu-icon open" : "menu-icon"} onClick={handleToggle}>
+                <div
+                    className={isOpen ? "menu-icon open" : "menu-icon"}
+                    onClick={handleToggle}
+                >
                     <div className="menu-icon__line"></div>
                     <div className="menu-icon__line"></div>
                     <div className="menu-icon__line"></div>
@@ -25,17 +28,25 @@ const Navbar = () => {
                             Home
                         </a>
                     </li>
-
-                    <li className="nav-item">
-                        <li className="nav-link dropdown-toggle">
-                            Destination
-                        </li>
-                        <ul className="dropdown-menu">
-                            <li className="dropdown-item active">
-                                <a href="/ladakh">Ladakh</a>
+                    <li>
+                        <button
+                            type="button"
+                            aria-haspopup="true"
+                            aria-expanded="true"
+                            aria-controls="dropdown1"
+                            className="nav-item"
+                        >
+                            Destination<span className="arrow nav"></span>
+                        </button>
+                        <ul className="dropdown" id="dropdown1">
+                            <li>
+                                <a className="nav-link" href="#">Ladakh</a>
                             </li>
-                            <li className="dropdown-item active">
-                                <a href="/south-india">South India</a>
+                            <li>
+                                <a className="nav-link" href="#">South India</a>
+                            </li>
+                            <li>
+                                <a className="nav-link" href="#">Himalay</a>
                             </li>
                         </ul>
                     </li>
