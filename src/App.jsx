@@ -4,14 +4,15 @@ import {
   Outlet
 } from "react-router-dom";
 import Home from './pages/Home/Home';
-import NavbarDark from './components/Navbar/Navbar';
+import Ladakh from "./pages/Ladakh/Ladakh";
+import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import './App.css'
 
 const Layout = () => {
   return (
     <div className="app">
-      <NavbarDark />
+      <Navbar />
       <Outlet />
       <Footer />
     </div>
@@ -27,7 +28,10 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home />
       },
-
+      {
+        path: '/ladakh',
+        element: <Ladakh />
+      },
     ]
   }
 ])
