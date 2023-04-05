@@ -5,9 +5,10 @@ import { Link } from "react-router-dom";
 
 const navigation = [
     { name: 'Home', href: '/', current: true },
-    // { name: 'Destination', href: '#', current: false },
+    { name: 'Tour Types', href: '#', current: false },
     { name: 'About Us', href: '#', current: false },
     { name: 'Contact', href: '#', current: false },
+
 ]
 
 function classNames(...classes) {
