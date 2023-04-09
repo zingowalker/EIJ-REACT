@@ -4,15 +4,15 @@ import './Hero.css'
 
 function Hero() {
     return (
-        <div className="bg-dark-800">
+        <div className="bg-black">
             <div className="w-full bg-center bg-cover bg-image">
                 <div className="relative isolate px-6 pt-14 lg:px-8">
                     <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
                         <div className="text-center">
-                            <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-4xl font-bold text-transparent md:text-6xl leading-[1.1] tracking-tight sm:text-6xl">
-                            Eco India Journeys Unleash Your Inner Explorer
+                            <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-4xl font-bold text-transparent md:text-6xl leading-[1.1] op tracking-tight sm:text-6xl">
+                                Eco India Journeys Unleash Your Inner Explorer
                             </h1>
-                            <p className="mt-6 text-lg leading-8 text-gray-600">
+                            <p className="mt-6 text-lg leading-[1.5] text-white">
                                 "Ready to explore India? Discover amazing destinations, indulge in new experiences, and make unforgettable memories. Book your holiday with us!"
                             </p>
                             <div className="mt-10 flex items-center justify-center gap-x-6">

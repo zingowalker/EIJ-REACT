@@ -7,6 +7,7 @@ import Home from './pages/Home/Home';
 import Ladakh from "./pages/Ladakh/Ladakh";
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+
 import './App.css'
 
 const Layout = () => {

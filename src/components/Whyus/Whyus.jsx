@@ -3,13 +3,13 @@ import React from "react";
 export const Whyus = () => {
     return (
         <>
-            <section>
+            <section className="bg-gray-800">
                 <div className="container px-6 py-10 mx-auto">
-                    <h2 className="text-4xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-black">
-                        Why Book With Eco India Journeys!
-                    </h2>
-                    <p className="mt-2 text-gray-900 dark:text-gray-900">
-                        Book with us for hassle-free travel planning, unbeatable prices, personalized service, and the guarantee of a memorable and seamless journey.
+                    <h1 className="lg:text-4xl md:text-4xl text-2xl text-white font-semibold leading-10 mt-6">
+                        Welcome to our travel website!
+                    </h1>
+                    <p className="mt-4 text-white">
+                        Here are some reasons why you should book your next trip with us.
                     </p>
 
                     <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3">
@@ -31,34 +31,13 @@ export const Whyus = () => {
                                 </svg>
                             </span>
 
-                            <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                                Copy & paste components
-                            </h1>
+                            <h2 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
+                                Best prices
+                            </h2>
 
                             <p className="text-gray-500 dark:text-gray-300">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Provident ab nulla quod dignissimos vel non corrupti doloribus
-                                voluptatum eveniet
+                                We work hard to offer the most competitive prices for hotels, trekking, motorbike, and tour packages, so you can save money on your travels.
                             </p>
-
-                            <a
-                                href="#"
-                                className="inline-flex items-center -mx-1 text-sm text-indigo-600 capitalize transition-colors duration-300 transform dark:text-indigo-500 hover:underline hover:text-indigo-700 dark:hover:text-indigo-600"
-                            >
-                                <span className="mx-1">read more</span>
-                                <svg
-                                    className="w-4 h-4 mx-1 rtl:-scale-x-100"
-                                    fill="currentColor"
-                                    viewBox="0 0 20 20"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        fillRule="evenodd"
-                                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                                        clipRule="evenodd"
-                                    ></path>
-                                </svg>
-                            </a>
                         </div>
 
                         <div className="space-y-3">
@@ -79,34 +58,13 @@ export const Whyus = () => {
                                 </svg>
                             </span>
 
-                            <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                                Zero Configrations
-                            </h1>
+                            <h2 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
+                                User-friendly website
+                            </h2>
 
                             <p className="text-gray-500 dark:text-gray-300">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Provident ab nulla quod dignissimos vel non corrupti doloribus
-                                voluptatum eveniet
+                                Our website is easy to use and navigate, so you can find what you're looking for quickly and easily.
                             </p>
-
-                            <a
-                                href="#"
-                                className="inline-flex items-center -mx-1 text-sm text-indigo-600 capitalize transition-colors duration-300 transform dark:text-indigo-500 hover:underline hover:text-indigo-700 dark:hover:text-indigo-600"
-                            >
-                                <span className="mx-1">read more</span>
-                                <svg
-                                    className="w-4 h-4 mx-1 rtl:-scale-x-100"
-                                    fill="currentColor"
-                                    viewBox="0 0 20 20"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        fillRule="evenodd"
-                                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                                        clipRule="evenodd"
-                                    ></path>
-                                </svg>
-                            </a>
                         </div>
 
                         <div className="space-y-3">
@@ -127,34 +85,13 @@ export const Whyus = () => {
                                 </svg>
                             </span>
 
-                            <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                                New Components Every month
-                            </h1>
+                            <h2 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
+                                Expert customer support
+                            </h2>
 
                             <p className="text-gray-500 dark:text-gray-300">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Provident ab nulla quod dignissimos vel non corrupti doloribus
-                                voluptatum eveniet
+                                Our team of travel experts is available around the clock to answer any questions you may have and help you plan your trip.
                             </p>
-
-                            <a
-                                href="#"
-                                className="inline-flex items-center -mx-1 text-sm text-indigo-600 capitalize transition-colors duration-300 transform dark:text-indigo-500 hover:underline hover:text-indigo-700 dark:hover:text-indigo-600"
-                            >
-                                <span className="mx-1">read more</span>
-                                <svg
-                                    className="w-4 h-4 mx-1 rtl:-scale-x-100"
-                                    fill="currentColor"
-                                    viewBox="0 0 20 20"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        fillRule="evenodd"
-                                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                                        clipRule="evenodd"
-                                    ></path>
-                                </svg>
-                            </a>
                         </div>
 
                         <div className="space-y-3">
@@ -181,34 +118,13 @@ export const Whyus = () => {
                                 </svg>
                             </span>
 
-                            <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                                elegant Dark Mode
-                            </h1>
+                            <h2 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
+                                Exclusive deals and offers
+                            </h2>
 
                             <p className="text-gray-500 dark:text-gray-300">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Provident ab nulla quod dignissimos vel non corrupti doloribus
-                                voluptatum eveniet
+                                We regularly offer exclusive deals and promotions to our customers, so you can save even more on your travels.
                             </p>
-
-                            <a
-                                href="#"
-                                className="inline-flex items-center -mx-1 text-sm text-indigo-600 capitalize transition-colors duration-300 transform dark:text-indigo-500 hover:underline hover:text-indigo-700 dark:hover:text-indigo-600"
-                            >
-                                <span className="mx-1">read more</span>
-                                <svg
-                                    className="w-4 h-4 mx-1 rtl:-scale-x-100"
-                                    fill="currentColor"
-                                    viewBox="0 0 20 20"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        fillRule="evenodd"
-                                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                                        clipRule="evenodd"
-                                    ></path>
-                                </svg>
-                            </a>
                         </div>
 
                         <div className="space-y-3">
@@ -229,34 +145,14 @@ export const Whyus = () => {
                                 </svg>
                             </span>
 
-                            <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                                Easy to customiztions
-                            </h1>
+                            <h2 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
+                                Local knowledge and expertise
+                            </h2>
 
                             <p className="text-gray-500 dark:text-gray-300">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Provident ab nulla quod dignissimos vel non corrupti doloribus
-                                voluptatum eveniet
+                                Our travel experts have extensive local knowledge and expertise, so they can help you plan the perfect trip and give you insider tips and recommendations.
                             </p>
 
-                            <a
-                                href="#"
-                                className="inline-flex items-center -mx-1 text-sm text-indigo-600 capitalize transition-colors duration-300 transform dark:text-indigo-500 hover:underline hover:text-indigo-700 dark:hover:text-indigo-600"
-                            >
-                                <span className="mx-1">read more</span>
-                                <svg
-                                    className="w-4 h-4 mx-1 rtl:-scale-x-100"
-                                    fill="currentColor"
-                                    viewBox="0 0 20 20"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        fillRule="evenodd"
-                                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                                        clipRule="evenodd"
-                                    ></path>
-                                </svg>
-                            </a>
                         </div>
 
                         <div className="space-y-3">
@@ -277,34 +173,14 @@ export const Whyus = () => {
                                 </svg>
                             </span>
 
-                            <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                                Simple & clean designs
-                            </h1>
+                            <h2 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
+                                Trust and reliability
+                            </h2>
 
                             <p className="text-gray-500 dark:text-gray-300">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Provident ab nulla quod dignissimos vel non corrupti doloribus
-                                voluptatum eveniet
+                                We have a proven track record of providing reliable and trustworthy travel services, so you can book with confidence and peace of mind.
                             </p>
 
-                            <a
-                                href="#"
-                                className="inline-flex items-center -mx-1 text-sm text-indigo-600 capitalize transition-colors duration-300 transform dark:text-indigo-500 hover:underline hover:text-indigo-700 dark:hover:text-indigo-600"
-                            >
-                                <span className="mx-1">read more</span>
-                                <svg
-                                    className="w-4 h-4 mx-1 rtl:-scale-x-100"
-                                    fill="currentColor"
-                                    viewBox="0 0 20 20"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        fillRule="evenodd"
-                                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                                        clipRule="evenodd"
-                                    ></path>
-                                </svg>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -312,7 +188,5 @@ export const Whyus = () => {
         </>
     );
 };
-
-Whyus.displayName = "Whyus";
 
 export default Whyus;

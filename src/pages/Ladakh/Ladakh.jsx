@@ -1,6 +1,7 @@
 import React from "react";
 import Breadcrumb from "../../components/Breadcrumb";
 
+
 const Data = [
     {
         id: 1,
@@ -34,7 +35,7 @@ const Data = [
 export const Ladakh = () => {
     return (
         <>
-            <Breadcrumb/>
+            <Breadcrumb />
             <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
                 {Data.map((item) => (
                     <div

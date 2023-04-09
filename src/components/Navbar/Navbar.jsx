@@ -35,21 +35,23 @@ export default function Navbar() {
                             </div>
                             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                                 <div className="flex flex-shrink-0 items-center">
-                                    <img
-                                        className="block h-8 w-auto lg:hidden"
-                                        src="./images/logo.png"
-                                        alt="logo"
-                                    />
-                                    <img
-                                        className="hidden h-8 w-auto lg:block"
-                                        src="./images/logo.png"
-                                        alt="logo"
-                                    />
+                                    <Link to="/">
+                                        <img
+                                            className="block h-8 w-auto lg:hidden"
+                                            src="./images/logo.png"
+                                            alt="logo"
+                                        />
+                                        <img
+                                            className="hidden h-8 w-auto lg:block"
+                                            src="./images/logo.png"
+                                            alt="logo"
+                                        />
+                                    </Link>
                                 </div>
                                 <div className="hidden sm:ml-6 sm:block">
                                     <div className="flex space-x-4">
                                         {navigation.map((item) => (
-                                            <a
+                                            <Link
                                                 key={item.name}
                                                 href={item.href}
                                                 className={classNames(
@@ -59,9 +61,11 @@ export default function Navbar() {
                                                 aria-current={item.current ? 'page' : undefined}
                                             >
                                                 {item.name}
-                                            </a>
+                                            </Link>
                                         ))}
+                                        
                                     </div>
+                                    
                                 </div>
                             </div>
                             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
@@ -74,6 +78,7 @@ export default function Navbar() {
 
                                             <GlobeAltIcon className="h-6 w-6" aria-hidden="true" />
                                         </Menu.Button>
+                                       
                                     </div>
                                     <Transition
                                         as={Fragment}
