@@ -1,5 +1,6 @@
 import React from "react";
 import Breadcrumb from "../../components/Breadcrumb";
+import LadakhBanner from "../../components/LadakhBanner/LadakhBanner";
 
 
 const Data = [
@@ -30,13 +31,41 @@ const Data = [
         description:
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.",
     },
+    {
+        id: 4,
+        title: "Beach",
+        image:
+            "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+        tags: ["photography", "travel", "winter"],
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.",
+    },
+    {
+        id: 5,
+        title: "Beach",
+        image:
+            "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+        tags: ["photography", "travel", "winter"],
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.",
+    },
+    {
+        id: 6,
+        title: "Beach",
+        image:
+            "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+        tags: ["photography", "travel", "winter"],
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.",
+    },
 ];
 
 export const Ladakh = () => {
     return (
         <>
+            <LadakhBanner />
             <Breadcrumb />
-            <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+            <div className="p-8 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
                 {Data.map((item) => (
                     <div
                         key={item.id}
