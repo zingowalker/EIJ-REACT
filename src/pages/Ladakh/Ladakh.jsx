@@ -1,63 +1,58 @@
 import React from "react";
 import Breadcrumb from "../../components/Breadcrumb";
 import LadakhBanner from "../../components/LadakhBanner/LadakhBanner";
-
+import { Link } from 'react-router-dom'
 
 const Data = [
     {
         id: 1,
-        title: "Trekking",
-        image:
+        title: "Markha Trek 05 Days",
+        src:
             "https://www.ecoindiajourneys.com/images/markhatrek.jpg",
-        tags: ["Trekking", "Homestay", "Camping"],
+        alt: "Hikers trekking to Markha Village, scenic view",
+        tags: ["Trekking", "Moderate", "Homestay", "Village Life", "Camping"],
         description:
-            "Markha Trek 06 Days, Trekking Through Ladakh's Stunning Landscape!",
+            "Markha Trek 05 Days, Trekking Through Ladakh's Stunning Landscape!",
+        name: "Itinerary",
+        link: "markha-trek",
     },
     {
         id: 2,
-        title: "Forest",
-        image:
-            "https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9yZXN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
-        tags: ["photography", "travel", "winter"],
+        title: "Rumtse To Tsomoriri Trek 09 Days",
+        src:
+            "https://www.ecoindiajourneys.com/images/rumtse-tsomoriri-trek2.jpg",
+        alt: "Tent with view of Tsomoriri Lake",
+        tags: ["Trekking", "Moderate", "Nomad Life", "Tsomoriri Lake", "Camping"],
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.",
+            "Explore the Beauty of the Changthang Plateau!",
+        link: "rumtse-tsomoriri-trek",
+        name: "Itinerary"
     },
     {
         id: 3,
-        title: "Beach",
-        image:
-            "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-        tags: ["photography", "travel", "winter"],
+        title: "Likir To Timisgam Trek 03 Days",
+        src:
+            "https://www.ecoindiajourneys.com/images/sham-trek1.jpg",
+        alt: "Hiking group picture at the pass",
+        tags: ["Hikking", "Village Life", "Easy Hike", "Camping", "Homestay"],
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.",
+            "Experience the culture of Ladakh on the Likir to Timisgam also know as baby trek",
+        link: "likir-timisgam-trek",
+        name: "Itinerary"
     },
     {
         id: 4,
-        title: "Beach",
-        image:
-            "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-        tags: ["photography", "travel", "winter"],
+        title: "Essence Of Ladakh, Royal Enfield Adventure",
+        src:
+            "https://hardevmotors.com/wp-content/uploads/2018/09/bgn-heading-san-francisco-1-1.jpg",
+        alt: "Motor bike group",
+        tags: ["Royal Enfield", "Adventure", "Motorbike", "Ladakh", "Touring"],
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.",
+            "This complete motorcycle tour will give you an excellent glimpse of Ladakh main sites and its natural, cultural and spiritual riches.",
+        link: "ladakh-motorbike-adventure",
+        name: "Itinerary"
     },
-    {
-        id: 5,
-        title: "Beach",
-        image:
-            "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-        tags: ["photography", "travel", "winter"],
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.",
-    },
-    {
-        id: 6,
-        title: "Beach",
-        image:
-            "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-        tags: ["photography", "travel", "winter"],
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.",
-    },
+
 ];
 
 export const Ladakh = () => {
@@ -71,10 +66,10 @@ export const Ladakh = () => {
                         key={item.id}
                         className="rounded overflow-hidden shadow-lg dark:shadow-gray-800"
                     >
-                        <img className="w-full" src={item.image} alt="Mountain" />
+                        <img className="w-full" src={item.src} alt={item.alt} loading="lazy" />
                         <div className="px-6 py-4">
                             <div className="font-bold text-xl mb-2">{item.title}</div>
-                            <p className="text-gray-700 dark:text-gray-300 text-base">
+                            <p className="text-gray-700  text-base">
                                 {item.description.substring(0, 100)}
                             </p>
                         </div>
@@ -82,11 +77,12 @@ export const Ladakh = () => {
                             {item.tags.map((tag) => (
                                 <span
                                     key={tag}
-                                    className="inline-block bg-gray-200 dark:bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-200 mr-2 mb-2"
+                                    className="inline-block bg-gray-200 dark:bg-[#000] rounded-md px-3 py-1 text-sm font-semibold text-[#fff] mr-2 mb-2"
                                 >
                                     {tag}
                                 </span>
                             ))}
+                            <Link className="inline-block rounded-md text-[#fff] hover:text-red-500 dark:bg-[#000] hover:bg-gray-700 px-3 py-1 text-sm font-semibold" to={item.link}>{item.name}</Link>
                         </div>
                     </div>
                 ))}

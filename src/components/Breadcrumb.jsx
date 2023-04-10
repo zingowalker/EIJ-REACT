@@ -1,15 +1,15 @@
 import React from "react";
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 export const Breadcrumb = () => {
     return (
         <nav
-            className="flex text-gray-900 relative top-5 dark:text-gray-900 justify-center items-center"
+            className="flex text-gray-900 relative top-0 dark:text-gray-900 justify-center items-center"
             aria-label="Breadcrumb"
         >
             <ol className="inline-flex items-center space-x-1 md:space-x-3">
                 <li className="inline-flex items-center">
                     <Link
-                        to="/destination"
+                        to="/"
                         className="text-gray-900 dark:text-gray-900 inline-flex ml-1 md:ml-2 text-sm font-medium hover:underline"
                     >
                         <svg
@@ -37,12 +37,11 @@ export const Breadcrumb = () => {
                                 clipRule="evenodd"
                             ></path>
                         </svg>
-                        <a
-                            href="#"
-                            className="text-gray-900 dark:text-gray-900 ml-1 md:ml-2 text-sm font-medium hover:underline"
+                        <p
+                            className="text-gray-900 dark:text-gray-900 ml-1 md:ml-2 text-sm font-medium"
                         >
                             Destination
-                        </a>
+                        </p>
                     </div>
                 </li>
                 <li>
@@ -59,12 +58,12 @@ export const Breadcrumb = () => {
                                 clipRule="evenodd"
                             ></path>
                         </svg>
-                        <a
-                            href="#"
+                        <Link
+                            to="/ladakh"
                             className="text-gray-900 dark:text-gray-900 ml-1 md:ml-2 text-sm font-medium hover:underline"
                         >
                             Ladakh
-                        </a>
+                        </Link>
                     </div>
                 </li>
             </ol>

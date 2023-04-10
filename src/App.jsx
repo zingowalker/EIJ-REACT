@@ -29,6 +29,7 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home />
       },
+
       {
         path: '/ladakh',
         element: <Ladakh />
