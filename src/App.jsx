@@ -4,7 +4,9 @@ import {
   Outlet
 } from "react-router-dom";
 import Home from './pages/Home/Home';
-import Ladakh from "./pages/Ladakh/Ladakh";
+import LadakhTours from "./pages/LadakhTours/LadakhTours";
+import SouthIndiaTours from "./pages/SouthIndiaTours/SouthIndiaTours";
+import SouthIndiaTour from "./components/SouthIndiaTour/SouthIndiaTour";
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 
@@ -31,8 +33,16 @@ const router = createBrowserRouter([
       },
 
       {
-        path: '/ladakh',
-        element: <Ladakh />
+        path: "/Ladakh-Tours/:id",
+        element: <LadakhTours />
+      },
+      {
+        path: "/South-India-Tours/:id",
+        element: <SouthIndiaTours />
+      },
+      {
+        path: '/Tour/:id',
+        element: <SouthIndiaTour />
       },
     ]
   }

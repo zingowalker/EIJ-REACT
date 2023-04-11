@@ -72,7 +72,7 @@ export default function Navbar() {
                                                     <Menu.Item>
                                                         {({ active }) => (
                                                             <Link
-                                                                to="/ladakh"
+                                                                to="/Ladakh-Tours/1"
                                                                 className={classNames(
                                                                     active ? "bg-gray-100" : "",
                                                                     "block px-4 py-2 text-sm text-gray-700"
@@ -86,7 +86,7 @@ export default function Navbar() {
                                                     <Menu.Item>
                                                         {({ active }) => (
                                                             <Link
-                                                                to="/south-india"
+                                                                to="/South-India-Tours/1"
                                                                 className={classNames(
                                                                     active ? "bg-gray-100" : "",
                                                                     "block px-4 py-2 text-sm text-gray-700"
@@ -144,7 +144,7 @@ export default function Navbar() {
                                 <Link to="/">
                                     <img
                                         className="h-8 w-auto"
-                                        src="./images/logo.png"
+                                        src="../images/logo.png"
                                         alt="logo"
                                     />
                                 </Link>
@@ -197,7 +197,7 @@ export default function Navbar() {
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <Link
-                                                    to="/ladakh"
+                                                    to="/Ladakh-Tours/1"
                                                     className={classNames(
                                                         active ? "bg-gray-100" : "",
                                                         "block px-4 py-2 text-sm text-gray-700"
@@ -210,7 +210,7 @@ export default function Navbar() {
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <Link
-                                                    to="/southIndia"
+                                                    to="/South-India-Tours/1"
                                                     className={classNames(
                                                         active ? "bg-gray-100" : "",
                                                         "block px-4 py-2 text-sm text-gray-700"

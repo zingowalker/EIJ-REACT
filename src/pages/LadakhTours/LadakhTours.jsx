@@ -1,7 +1,8 @@
 import React from "react";
-import Breadcrumb from "../../components/Breadcrumb";
-import LadakhBanner from "../../components/LadakhBanner/LadakhBanner";
+import LadakhBreadcrumb from "../../components/Breadcrumbs/LadakhBreadcrumb";
+import LadakhBanner from "../../components/Banner/LadakhBanner";
 import { Link } from 'react-router-dom'
+// import { useParams } from 'react-router-dom'
 
 const Data = [
     {
@@ -55,11 +56,11 @@ const Data = [
 
 ];
 
-export const Ladakh = () => {
+export const LadakhTours = () => {
     return (
         <>
             <LadakhBanner />
-            <Breadcrumb />
+            <LadakhBreadcrumb />
             <div className="p-8 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
                 {Data.map((item) => (
                     <div
@@ -82,15 +83,15 @@ export const Ladakh = () => {
                                     {tag}
                                 </span>
                             ))}
-                            <Link className="inline-block rounded-md text-[#fff] hover:text-red-500 dark:bg-[#000] hover:bg-gray-700 px-3 py-1 text-sm font-semibold" to={item.link}>{item.name}</Link>
+                            <Link className="inline-block rounded-md text-[#fff] hover:text-red-500 dark:bg-[#000] hover:bg-gray-700 px-3 py-1 text-sm font-semibold"
+                                to={`/Ladakh-Tours/${item.link}`}>{item.name}
+                            </Link>
                         </div>
                     </div>
                 ))}
             </div>
         </>
     );
-};
+}
 
-Ladakh.displayName = "Ladakh";
-
-export default Ladakh;
+export default LadakhTours;

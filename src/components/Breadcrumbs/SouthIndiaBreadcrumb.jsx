@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom'
-export const Breadcrumb = () => {
+
+export const SouthIndiaBreadcrumb = () => {
     return (
         <nav
             className="flex text-gray-900 relative top-0 dark:text-gray-900 justify-center items-center"
@@ -59,10 +60,10 @@ export const Breadcrumb = () => {
                             ></path>
                         </svg>
                         <Link
-                            to="/ladakh"
+                            to="/South-India-Tours/1"
                             className="text-gray-900 dark:text-gray-900 ml-1 md:ml-2 text-sm font-medium hover:underline"
                         >
-                            Ladakh
+                            South India
                         </Link>
                     </div>
                 </li>
@@ -72,4 +73,4 @@ export const Breadcrumb = () => {
 };
 
 
-export default Breadcrumb;
+export default SouthIndiaBreadcrumb;
