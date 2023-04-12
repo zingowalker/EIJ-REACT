@@ -14,17 +14,20 @@ const LadakhTourDetails = () => {
 
   // console.log(typeof(productId))
 
-  const { id, title, src, alt, tags, description, name, text } = ladakhTourDetails;
+  const { id, title, src, alt, tags, desc, text } = ladakhTourDetails;
 
   // console.log("tour id ", tourId)
   // console.log("tour ", ladakhTourDetails)
 
   return (
-    <div className="max-auto">
-      <h1 clasName="mt-8">{title}</h1>
-      <p>{text} </p>
-      {/* <p>Tags: {props.tags.join(', ')}</p> */}
-      <Link to="/tours" className="btn btn-primary btn-sm">Itinerary</Link>
+    <div className="mx-auto py-12">
+      <div className="bg-cover bg-center h-64 md:h-96"
+        style={{ backgroundImage: `url(${src})` }}>
+        <div className="container mx-auto h-full flex flex-col items-center justify-center column">
+          <h1 className="text-3xl md:text-5xl font-bold text-white text-center">{title}</h1>
+          <p className="text-[#fff] text-sm md:text-xl text-center mt-4">{desc}</p>
+        </div>
+      </div>
     </div>
   );
 }
