@@ -60,7 +60,7 @@ export const LadakhBreadcrumb = () => {
                             ></path>
                         </svg>
                         <Link
-                            to="/Ladakh-Tours/1"
+                            to="/Destination/Ladakh"
                             className="text-gray-900 dark:text-gray-900 ml-1 md:ml-2 text-sm font-medium hover:underline"
                         >
                             Ladakh

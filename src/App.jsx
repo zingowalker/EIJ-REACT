@@ -5,8 +5,9 @@ import {
 } from "react-router-dom";
 import Home from './pages/Home/Home';
 import LadakhTours from "./pages/LadakhTours/LadakhTours";
+import LadakhTourDetails from "./components/LadakhTourDetails/LadakhTourDetails";
 import SouthIndiaTours from "./pages/SouthIndiaTours/SouthIndiaTours";
-import SouthIndiaTour from "./components/SouthIndiaTour/SouthIndiaTour";
+import SouthIndiaTourDetails from "./components/SouthIndiaTourDetails/SouthIndiaTourDetails";
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 
@@ -33,22 +34,29 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/Ladakh-Tours/:id",
+        path: "/Destination/Ladakh",
         element: <LadakhTours />
       },
       {
-        path: "/South-India-Tours/:id",
+        path: "/Tour/:id",
+        element: <LadakhTourDetails />
+      },
+      {
+        path: "/Destination/South-India",
         element: <SouthIndiaTours />
       },
       {
         path: '/Tour/:id',
-        element: <SouthIndiaTour />
+        element: <SouthIndiaTourDetails />
       },
+
     ]
-  }
+  },
+
 ])
 
 function App() {
+
   return (
     <RouterProvider router={router}>
       <div className="app">

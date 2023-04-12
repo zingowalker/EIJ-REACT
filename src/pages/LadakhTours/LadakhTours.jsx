@@ -2,7 +2,6 @@ import React from "react";
 import LadakhBreadcrumb from "../../components/Breadcrumbs/LadakhBreadcrumb";
 import LadakhBanner from "../../components/Banner/LadakhBanner";
 import { Link } from 'react-router-dom'
-// import { useParams } from 'react-router-dom'
 
 const Data = [
     {
@@ -15,7 +14,7 @@ const Data = [
         description:
             "Markha Trek 05 Days, Trekking Through Ladakh's Stunning Landscape!",
         name: "Itinerary",
-        link: "markha-trek",
+        link: "Markha-Trek",
     },
     {
         id: 2,
@@ -26,7 +25,7 @@ const Data = [
         tags: ["Trekking", "Moderate", "Nomad Life", "Tsomoriri Lake", "Camping"],
         description:
             "Explore the Beauty of the Changthang Plateau!",
-        link: "rumtse-tsomoriri-trek",
+        link: "Rumtse-Tsomoriri-Trek",
         name: "Itinerary"
     },
     {
@@ -38,7 +37,7 @@ const Data = [
         tags: ["Hikking", "Village Life", "Easy Hike", "Camping", "Homestay"],
         description:
             "Experience the culture of Ladakh on the Likir to Timisgam also know as baby trek",
-        link: "likir-timisgam-trek",
+        link: "Likir-Timisgam-Trek",
         name: "Itinerary"
     },
     {
@@ -50,13 +49,13 @@ const Data = [
         tags: ["Royal Enfield", "Adventure", "Motorbike", "Ladakh", "Touring"],
         description:
             "This complete motorcycle tour will give you an excellent glimpse of Ladakh main sites and its natural, cultural and spiritual riches.",
-        link: "ladakh-motorbike-adventure",
+        link: "Ladakh-otorbike-adventure",
         name: "Itinerary"
     },
 
 ];
 
-export const LadakhTours = () => {
+export const LadakhTours = (props) => {
     return (
         <>
             <LadakhBanner />
@@ -84,7 +83,7 @@ export const LadakhTours = () => {
                                 </span>
                             ))}
                             <Link className="inline-block rounded-md text-[#fff] hover:text-red-500 dark:bg-[#000] hover:bg-gray-700 px-3 py-1 text-sm font-semibold"
-                                to={`/Ladakh-Tours/${item.link}`}>{item.name}
+                                to={`/Tour/${item.link}`}>{item.name}
                             </Link>
                         </div>
                     </div>
