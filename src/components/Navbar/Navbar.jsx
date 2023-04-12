@@ -72,7 +72,7 @@ export default function Navbar() {
                                                     <Menu.Item>
                                                         {({ active }) => (
                                                             <Link
-                                                                to="/Destination/Ladakh"
+                                                                to="Destination/Ladakh"
                                                                 className={classNames(
                                                                     active ? "bg-gray-100" : "",
                                                                     "block px-4 py-2 text-sm text-gray-700"
@@ -86,7 +86,7 @@ export default function Navbar() {
                                                     <Menu.Item>
                                                         {({ active }) => (
                                                             <Link
-                                                                to="/Destination/South-India"
+                                                                to="Destination/South-India"
                                                                 className={classNames(
                                                                     active ? "bg-gray-100" : "",
                                                                     "block px-4 py-2 text-sm text-gray-700"
@@ -126,13 +126,13 @@ export default function Navbar() {
                                             </Transition>
                                         </Menu>
                                         <Link
-                                            to="#"
+                                            to="/about"
                                             className=" text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                                         >
                                             About Us
                                         </Link>
                                         <Link
-                                            to="#"
+                                            to="/contact"
                                             className=" text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                                         >
                                             Contact
@@ -197,7 +197,7 @@ export default function Navbar() {
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <Link
-                                                    to="/Destination/Leh-Ladakh"
+                                                    to="Destination/Ladakh"
                                                     className={classNames(
                                                         active ? "bg-gray-100" : "",
                                                         "block px-4 py-2 text-sm text-gray-700"
@@ -210,7 +210,7 @@ export default function Navbar() {
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <Link
-                                                    to="/Destination/South-India"
+                                                    to="Destination/South-India"
                                                     className={classNames(
                                                         active ? "bg-gray-100" : "",
                                                         "block px-4 py-2 text-sm text-gray-700"
@@ -250,13 +250,13 @@ export default function Navbar() {
                                 </Transition>
                             </Menu>
                             <Link
-                                to="#"
+                                to="/about"
                                 className="text-white hover:bg-gray-700  block rounded-md px-3 py-2 text-base font-medium"
                             >
                                 About Us
                             </Link>
                             <Link
-                                to="#"
+                                to="/contact"
                                 className="text-white hover:bg-gray-700  block rounded-md px-3 py-2 text-base  font-medium"
                             >
                                 Contact
