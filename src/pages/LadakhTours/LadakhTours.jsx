@@ -1,6 +1,6 @@
 import React from "react";
 import TOURS from '../../../ladakh.js'
-
+import MarkhaTrek from '../../components/Itineraries/MarkhaTrek'
 import LadakhBreadcrumb from "../../components/Breadcrumbs/LadakhBreadcrumb";
 import LadakhBanner from "../../components/Banner/LadakhBanner";
 import { Link } from 'react-router-dom'
@@ -23,9 +23,8 @@ export const LadakhTours = () => {
                             <p className="text-gray-700  text-base">
                                 {tour.desc.substring(0, 150)}
                             </p>
-                            <Link
-                                to={`/tours/${tour.id}`}
-                                className="inline-flex items-center -mx-1 text-sm text-[#3195ff] capitalize transition-colors duration-300 transform dark:text-[#3195ff] hover:underline hover:text-red-500 dark:hover:text-red-500">
+                            <Link className="inline-flex items-center -mx-1 text-sm text-[#3195ff] capitalize transition-colors duration-300 transform dark:text-[#3195ff] hover:underline hover:text-red-500 dark:hover:text-red-500"
+                                to={`/tours/${tour.id}`}>
                                 <span className="mx-1">read more</span>
                                 <svg
                                     className="w-4 h-4 mx-1 rtl:-scale-x-100"

@@ -1,18 +1,21 @@
+
+
 const TOURS = [
     {
         id: 1,
-        title: "Markha Trek 05 Days",
+        name: "Markha Trek 06 Days",
         desc:
-            "Markha Trek 05 Days, Trekking Through Ladakh's Stunning Landscape!",
+            "This 6 days of Markha trek will take you through Ladakh's Stunning Landscape, lush green valleys and experience the culture and village life",
         src:
             "https://www.ecoindiajourneys.com/images/markhatrek.jpg",
         alt: "Hikers trekking to Markha Village, scenic view",
         tags: ["Trekking", "Moderate", "Homestay", "Village Life", "Camping"],
         highlights: "Highlights",
+        name: "Markha-Trek"
     },
     {
         id: 2,
-        title: "Rumtse To Tsomoriri Trek 09 Days",
+        name: "Rumtse To Tsomoriri Trek 09 Days",
         desc:
             "Explore the Beauty of the Changthang Plateau!",
         src:
@@ -23,7 +26,7 @@ const TOURS = [
     },
     {
         id: 3,
-        title: "Likir To Timisgam Trek 03 Days",
+        name: "Likir To Timisgam Trek 03 Days",
         desc:
             "Experience the culture of Ladakh on the Likir to Timisgam also know as baby trek",
         src:
@@ -34,7 +37,7 @@ const TOURS = [
     },
     {
         id: 4,
-        title: "Essence Of Ladakh, Royal Enfield Adventure",
+        name: "Essence Of Ladakh, Royal Enfield Adventure",
         desc:
             "This complete motorcycle tour will give you an excellent glimpse of Ladakh main sites and its natural, cultural and spiritual riches.",
         src:
