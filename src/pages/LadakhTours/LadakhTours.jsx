@@ -1,6 +1,5 @@
 import React from "react";
 import TOURS from '../../../ladakh.js'
-import MarkhaTrek from '../../components/Itineraries/MarkhaTrek'
 import LadakhBreadcrumb from "../../components/Breadcrumbs/LadakhBreadcrumb";
 import LadakhBanner from "../../components/Banner/LadakhBanner";
 import { Link } from 'react-router-dom'
