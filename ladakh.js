@@ -98,64 +98,22 @@ const TOURS = [
     alt: "Hiking group picture at the pass",
     tags: ["Hikking", "Village Life", "Easy Hike", "Camping", "Homestay"],
     highlights: "Highlights",
-  },
-  {
-    id: 4,
-    title: "Essence Of Ladakh, Royal Enfield Adventure",
-    desc: "This complete motorcycle tour will give you an excellent glimpse of Ladakh main sites and its natural, cultural and spiritual riches.",
-    src: "https://hardevmotors.com/wp-content/uploads/2018/09/bgn-heading-san-francisco-1-1.jpg",
-    alt: "Motor bike group",
-    tags: ["Royal Enfield", "Adventure", "Motorbike", "Ladakh", "Touring"],
-    highlights: "Highlights",
     itinerary: [
       {
-        heading: "Day 01: Manali",
+        heading: "Day 01: Likir(3519m) - Yangthang(3677m)",
         description:
-          "In morning we come to pick you up at the Kullu Airport or at the bus station and drive you to your hotel. Our representatives are there to provide you all the services and soon you’ll be introduced to the bikes and all details about the tour. Go-Pro Cameras on helmets, riding gears, Royal Enfield Bikes, let’s start riding around Manali valley with Adventure activities.",
+          "Start your journey by driving to Likir, located 45 km from Leh on the Srinagar Highway. At Likir, you can visit the monastery perched atop a hill above the village. As you begin your trek, you will pass through the villages of Yangthang and Sumdo after crossing small passes such as Phobe La (3550 meters) and Charatse La (3650 meters). You will spend the night in a camp.",
       },
       {
-        heading: "Day 02: Manali - Jispa",
+        heading:
+          "Day 02: Yangthang(3677m) - Tsermangchen La(3874) - Hemis Shukpachen(3632)",
         description:
-          'On that day, we’ll start riding in direction of Keylong, traveling over the Rohtang pass which reaches an altitude of 4050m and from where you can see the snow white peaks of Lahaul Mountains that contrast with fluttering Buddhist prayer flags along the way. The pass provides a natural divide between the sub-humid/humid Kullu Valley with a primarily Hindu culture (in the south), and the arid/semi-arid high-altitude Lahaul and Spiti valleys with a Buddhist culture (in the north). From that side, we follow our route towards Keylong. Situated at an altitude of 3440 m, Keylong is the headquarters of Lahaul and Spiti district of Himachal Pradesh and the most populated place of that region. The region is strange, exciting, primitive mountainous and delightful. Among the white and brown mountain, Keylong stands out as oasis of greenery in the district. Rudyard Kipling said of the region "Surely the God live here”, this no place for men. Lahaul and Spiti have hardly changed with the time. People still live the way they used to live and strongly believe in conserving nature. Valley, river, mountains and green landscape makes Keylong an exciting picturesque destination for bikers and aside from its amazing landscape, the vicinity of Keylong offers several places, temples, monasteries and bazaar which are worth visiting.',
+          "After breakfast, set off on a relatively short trek to Hemis Shukpachan. This will involve crossing Tsermangchen La to reach the village. Hemis Shukpachan is known for its rich cultural background, myths, and mysteries, as well as its natural beauty. You can also opt to take a 3-hour walk to Dakmar, a small lake located near the village. You will spend the night in a camp.",
       },
       {
-        heading: "Day 03: Jispa - Pang",
+        heading: "Day 03: Hemis Shukpachen(3760m) - Temisgam(3230m)",
         description:
-          "Get ready to enter in the pure Himalayan wilderness! We will cross Patseo, which was until the 1950’s a trade point for Changspa nomads and traders from Lahaul, Zanskar and Kullu. We’ll ride on a torturous zigzag shaped uphill road that lies in the shadow of the hanging glacier to Baralach La (4900m). Further, at Lachulung La, you can see incredible natural sculpture built by the wind blowing through the rocks of a canyon that reminds one of scenery in Arizona. We start our descent to the green fields of Sarchu plateau and finally reach Pang, and useful halt on Manali Leh highway. There we’ll camp and spend a fun and convivial time together before sleeping among the clouds as this place reaches an altitude of 4500m!",
-      },
-      {
-        heading: "Day 04: Pang - Leh",
-        description:
-          "From Pang, let’s start our ride in direction of Leh! We follow an endless strip of asphalt loops that look like scratched into the reddish cliffs and start our descent on the More Plains road, a long, wide and straight road. The More Plain is home to many species of animals like the Tibetan wild ass or kiang, wild horses, marmots. If you are lucky, you can even spot Changspa nomads camping in the surreal landscape of the More Plains. Flanked by beautiful mountains on both sides, this area is a major attraction to the Bikers heading towards Leh from Manali. This huge ‘top-of-the-world’ plateau presents a landscape unlike anything else on your journey. After the More Plains, we start a new ascent and reach to Tanglang La, the world’s second highest motorable pass, which will lead us to our main destination: Leh.",
-      },
-      {
-        heading: "Day 05: Leh (Local Sightseeing)",
-        description:
-          'On this day we will take a short break from the long ride to see more of Ladakh’s main sights. India’s "Little Tibet" was highly influenced by the presence of Singge Namgyall, the greatest king of Ladakh, who decided to open the famous trade route to Central Asia region. In 1974 the region was opened for visitors and since 2002 have a substantial number of tourists. Nowadays, Leh is the most important town and the capital of Ladakh region. With 27,513 inhabitants and an altitude of 3524m, the town tripled its size in the last two decades and became a focal point for sightseeing. In addition of its many cultural places and monuments (Shanti Stupa, Leh Palace, Leh Mosque, Namgyal Tsemo Gompa...) mostly influenced by a Tibetan secular architecture, you will find great enjoyment losing yourself in the small charming narrow streets, going to meet local people and hang around in the small craft shops and markets.',
-      },
-      {
-        heading: "Day 06: Leh - Khardung La - Nubra Valley",
-        description:
-          "From Leh, we are ready to explore the fabulous Nubra Valley, a high altitude cold desert (about 3028m altitude) with rare precipitation and scant vegetation except along river beds. On the road, we will travel over the Khardung La pass listed in Guinness World Records as it is 5602m high! The world's highest motorable pass. After taking again your breath, we start entering in the Nubra Valley where you will be impressed by the incredible diversity of its landscapes. Snow-capped peaks, Rocky Mountains full of surprising contrasts and colors, and at its base sand dunes, bordered by an abundant vegetation and its river. You will fully enjoy visiting the Diskit Monastery where is exhibited the 35 meters statue of Maitreya Buddha, go swimming in the Nubra River, riding on the back of camels or just taking a walk in that unusual surroundings…",
-      },
-      {
-        heading: "Day 07: Nubra Valley - Panamik - Leh",
-        description:
-          "After taking advantage a last time of this wonderful place, we follow our route in direction of Panamik. Located about 150 kms north of Leh and at an altitude of 31Panamik.",
-      },
-      {
-        heading: "Day 08: Leh - Pangong Lake",
-        description:
-          'We will start in the early morning to ride to Pangong Lake. With a size of 700 km², a depth of 100m and an altitude of 4350m, Pangong Lake is also called "long, narrow, enchanted lake" by the Tibetans. Although its water is salty, the lake freezes completely over in winter.We will stay there for one night, camping in the middle of one of the most beautiful landscapes in the world!',
-      },
-      {
-        heading: "Day 09: Pangong Lake – Leh",
-        description:
-          "We will start in the early morning to ride towards Leh by crossing Changla (5360m) 3rd highest pass of Indian Himalayan Ride.",
-      },
-      {
-        heading: "Day 10: Departure",
-        description: "Today on time transfer you to Leh airport",
+          "Today's trek will be a bit longer as you will be crossing Maptek La (3750 meters), which offers breathtaking views of the surrounding valleys and mountains. Soon after crossing the pass, you will come across the Ang village. From there, the trail leads down to the Temisgam village, which features the ruins of a historic fort and a small monastery housing a highly sacred marble statue of Avalokitesvara. You will spend the night in a camp.",
       },
     ],
   },

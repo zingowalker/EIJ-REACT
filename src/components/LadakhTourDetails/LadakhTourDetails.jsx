@@ -16,7 +16,7 @@ const LadakhTourDetails = () => {
 
   // console.log(typeof(productId))
 
-  const { id, title, desc, src, alt, tags, highlights, itinerary } = ladakhTour;
+  const { id, title, desc, src, itinerary } = ladakhTour;
   // console.log("tour id ", tourId)
   // console.log("tour ", ladakhTour)
 
