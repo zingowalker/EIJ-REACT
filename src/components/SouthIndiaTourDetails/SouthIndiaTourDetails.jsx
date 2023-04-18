@@ -79,7 +79,7 @@ const SouthIndiaTourDetails = () => {
                 to="/Destination/South-India"
                 className="text-gray-900 dark:text-gray-900 ml-1 md:ml-2 text-sm font-medium hover:underline"
               >
-                Destination/South-India
+                South-India
               </Link>
             </div>
           </li>
