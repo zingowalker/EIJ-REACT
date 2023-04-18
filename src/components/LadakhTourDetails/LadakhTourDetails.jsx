@@ -5,8 +5,6 @@ import { ChevronUpIcon } from "@heroicons/react/20/solid";
 import TOURS from "../../../ladakh.js";
 
 const LadakhTourDetails = () => {
- 
-  
   // const navigate = useNavigate();
   const { tourId } = useParams();
   // const { pathname } = useLocation();
@@ -28,7 +26,8 @@ const LadakhTourDetails = () => {
       <div className="mx-auto py-12">
         <div
           className="bg-cover bg-center h-64 md:h-96"
-          style={{ backgroundImage: `url(${src})` }}>
+          style={{ backgroundImage: `url(${src})` }}
+        >
           <div className="container mx-auto h-full flex flex-col items-center justify-center column">
             <h1 className="text-3xl md:text-5xl font-bold text-white text-center">
               {title}
@@ -79,7 +78,7 @@ const LadakhTourDetails = () => {
                 to="/Destination/Ladakh"
                 className="text-gray-900 dark:text-gray-900 ml-1 md:ml-2 text-sm font-medium hover:underline"
               >
-                Destination/Ladakh
+                Ladakh
               </Link>
             </div>
           </li>
@@ -110,7 +109,6 @@ const LadakhTourDetails = () => {
         </ol>
       </nav>
       <div className="w-full py-12 px-4 pt-8">
-       
         <h1 className="text-center py-2 font-bold uppercase lg:text-2xl">
           Itinerary
         </h1>
