@@ -109,7 +109,9 @@ const SouthIndiaTourDetails = () => {
           </li>
         </ol>
       </nav>
+
       <div className="w-full py-12 px-4 pt-8">
+        
         <h1 className="text-center py-2 font-bold uppercase lg:text-2xl">
           Itinerary
         </h1>

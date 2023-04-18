@@ -2,7 +2,7 @@ const LADAKH = [
   {
     id: 1,
     title: "Markha Trek 06 Days",
-    desc: "This 6 days of Markha trek will take you through Ladakh's Stunning Landscape, lush green valleys and experience the culture and village life",
+    desc: "Trek through Ladakh's Stunning Landscape, lush green valleys and experience the culture and village life",
     src: "https://www.ecoindiajourneys.com/images/markhatrek.jpg",
     alt: "Hikers trekking to Markha Village, scenic view",
     tags: ["Trekking", "Moderate", "Homestay", "Village Life", "Camping"],
@@ -44,7 +44,7 @@ const LADAKH = [
   {
     id: 2,
     title: "Rumtse To Tsomoriri Trek 07 Days",
-    desc: "Explore the Beauty of the Changthang Plateau!",
+    desc: "This trek will take you through the Changthang region, a high-altitude plateau that has unique landscapes and stunning lakes like Tso Kar and Tso Moriri.",
     src: "https://www.ecoindiajourneys.com/images/rumtse-tsomoriri-trek2.jpg",
     alt: "Tent with view of Tsomoriri Lake",
     tags: ["Trekking", "Moderate", "Nomad Life", "Tsomoriri Lake", "Camping"],
@@ -186,7 +186,7 @@ const LADAKH = [
   {
     id: 5,
     title: "Srinagar to Ladakh Royal Enfield tour",
-    desc: "Our itinerary covers several destinations in the region, including Srinagar, Sonamarg, Zoji La (11,575 ft), Kargil, Wakha, Namika La (12,140 ft), Fotu La (13,478 ft), Lamayuru, Leh, Khardung La (17,982 ft), Hundar, Turtuk, Pangong Tso, Chang La (17,688 ft), and Leh.",
+    desc: "Passes covered in this motorcycle adventure are Zoji La (11,575 ft), Namika La (12,140 ft), Fotu La (13,478 ft) Khardung La (17,982 ft) and Chang La (17,688 ft)",
     src: "https://media.istockphoto.com/id/1300679200/photo/royal-enfield-in-ladakh-bullet.jpg?b=1&s=612x612&w=0&k=20&c=kd_aZ3UI6frRxVEheIecxleRHEawPPIU1e8TK45hBNI=",
     alt: "Motor bike group",
     tags: [

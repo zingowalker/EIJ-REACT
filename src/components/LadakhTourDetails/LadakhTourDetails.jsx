@@ -5,18 +5,21 @@ import { ChevronUpIcon } from "@heroicons/react/20/solid";
 import TOURS from "../../../ladakh.js";
 
 const LadakhTourDetails = () => {
+ 
+  
   // const navigate = useNavigate();
   const { tourId } = useParams();
   // const { pathname } = useLocation();
 
   // get product
   const ladakhTour = TOURS.find((tour) => tour.id === parseInt(tourId));
+
   // use == instead of === if useParams fails to get the id
   // or just check data type or use parseInt(id)
 
   // console.log(typeof(productId))
 
-  const { id, title, desc, src, itinerary } = ladakhTour;
+  const { id, title, longDesc, desc, src, itinerary } = ladakhTour;
   // console.log("tour id ", tourId)
   // console.log("tour ", ladakhTour)
 
@@ -25,8 +28,7 @@ const LadakhTourDetails = () => {
       <div className="mx-auto py-12">
         <div
           className="bg-cover bg-center h-64 md:h-96"
-          style={{ backgroundImage: `url(${src})` }}
-        >
+          style={{ backgroundImage: `url(${src})` }}>
           <div className="container mx-auto h-full flex flex-col items-center justify-center column">
             <h1 className="text-3xl md:text-5xl font-bold text-white text-center">
               {title}
@@ -108,6 +110,7 @@ const LadakhTourDetails = () => {
         </ol>
       </nav>
       <div className="w-full py-12 px-4 pt-8">
+       
         <h1 className="text-center py-2 font-bold uppercase lg:text-2xl">
           Itinerary
         </h1>
