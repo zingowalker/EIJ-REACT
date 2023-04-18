@@ -87,7 +87,7 @@ export const LadakhTours = () => {
               {tour.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="inline-block bg-gray-200 dark:bg-[#000] rounded-md px-3 py-1 text-sm font-semibold text-[#fff] mr-2 mb-2"
+                  className="inline-block bg-[#000] rounded-md px-3 py-1 text-sm font-semibold text-[#fff] mr-2 mb-2"
                 >
                   {tag}
                 </span>
