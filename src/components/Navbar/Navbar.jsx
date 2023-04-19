@@ -38,7 +38,7 @@ export default function Navbar() {
                   <div className="flex space-x-4 items-center">
                     <Link
                       to="/"
-                      className="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                      className="text-white hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                     >
                       Home
                     </Link>
@@ -47,12 +47,12 @@ export default function Navbar() {
                       <div>
                         <Menu.Button
                           onMouseOver={() => setDrop(true)}
-                          className="p-2 px-2 flex text-[#fff] hover:bg-gray-700 rounded-md"
+                          className="p-2 px-2 flex text-[#fff] hover:bg-blue-500 rounded-md"
                           aria-hidden="true"
                         >
                           Destination
                           <ChevronDownIcon
-                            className="ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100"
+                            className="ml-2 -mr-1 h-5 w-5 text-white hover:text-black"
                             aria-hidden="true"
                           />
                         </Menu.Button>
@@ -67,7 +67,7 @@ export default function Navbar() {
                         leaveTo="transform opacity-0 scale-95"
                       >
                         <Menu.Items
-                          className={`absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg focus:outline-none
+                          className={`absolute right-0 z-10 mt-2 py-2 w-48 origin-top-right bg-white rounded-md shadow-lg focus:outline-none
                                                 ${drop ? "block" : "hidden"}`}
                         >
                           <Menu.Item>
@@ -75,8 +75,8 @@ export default function Navbar() {
                               <Link
                                 to="Destination/Ladakh"
                                 className={classNames(
-                                  active ? "bg-gray-100" : "",
-                                  "block px-4 py-2 text-sm text-gray-700"
+                                  active ? "bg-blue-500" : "",
+                                  "block px-4 py-2 text-sm text-gray-900"
                                 )}
                               >
                                 Ladakh
@@ -87,10 +87,24 @@ export default function Navbar() {
                           <Menu.Item>
                             {({ active }) => (
                               <Link
+                                to="Destination/Himachal"
+                                className={classNames(
+                                  active ? "bg-blue-500" : "",
+                                  "block px-4 py-2 text-sm text-gray-900"
+                                )}
+                              >
+                                Himachal
+                              </Link>
+                            )}
+                          </Menu.Item>
+
+                          <Menu.Item>
+                            {({ active }) => (
+                              <Link
                                 to="Destination/South-India"
                                 className={classNames(
-                                  active ? "bg-gray-100" : "",
-                                  "block px-4 py-2 text-sm text-gray-700"
+                                  active ? "bg-blue-500" : "",
+                                  "block px-4 py-2 text-sm text-900"
                                 )}
                               >
                                 South India
@@ -102,13 +116,13 @@ export default function Navbar() {
                     </Menu>
                     <Link
                       to="/about"
-                      className=" text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                      className="text-white hover:bg-blue-500 hover:text-gray-200 rounded-md px-3 py-2 text-sm font-medium"
                     >
                       About Us
                     </Link>
                     <Link
                       to="/contact"
-                      className=" text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                      className=" text-white hover:bg-blue-500 hover:text-gray-200 rounded-md px-3 py-2 text-sm font-medium"
                     >
                       Contact
                     </Link>
@@ -131,7 +145,7 @@ export default function Navbar() {
             <div className="space-y-1 px-2 pb-3 pt-2">
               <Link
                 to="/"
-                className="text-white hover:bg-gray-700 block rounded-md px-3 py-2 text-base font-medium"
+                className="text-white hover:bg-blue-500 hover:text-gray-200 block rounded-md px-3 py-2 text-base font-medium"
               >
                 Home
               </Link>
@@ -139,29 +153,19 @@ export default function Navbar() {
                 <div>
                   <Menu.Button
                     onMouseOver={() => setDrop(true)}
-                    className="p-1 px-0 flex items-center hover:bg-gray-700 rounded-md"
+                    className="p-1 px-0 flex items-center hover:bg-blue-500 rounded-md"
                   >
                     <span className="sr-only">Open user menu</span>
                     <div
-                      className="relative text-white hover:bg-gray-700 hover:text-white rounded-md px-0 py-2 text-base block font-medium"
+                      className="relative text-white hover:bg-blue-500 hover:text-gray-200 rounded-md px-1 py-1 text-base block font-medium"
                       aria-hidden="true"
                     >
                       Destination
                     </div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="white"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1}
-                      stroke="currentColor"
-                      className="w-6 h-6 m-auto"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                      />
-                    </svg>
+                    <ChevronDownIcon
+                      className="ml-0 mr-0 h-5 w-5 text-white hover:text-black"
+                      aria-hidden="true"
+                    />
                   </Menu.Button>
                 </div>
                 <Transition
@@ -179,21 +183,36 @@ export default function Navbar() {
                         <Link
                           to="Destination/Ladakh"
                           className={classNames(
-                            active ? "bg-gray-100" : "",
-                            "block px-4 py-2 text-sm text-gray-700"
+                            active ? "bg-blue-500" : "",
+                            "block px-4 py-2 text-sm text-gray-900"
                           )}
                         >
                           Ladakh
                         </Link>
                       )}
                     </Menu.Item>
+
+                    <Menu.Item>
+                      {({ active }) => (
+                        <Link
+                          to="Destination/Himachal"
+                          className={classNames(
+                            active ? "bg-blue-500" : "",
+                            "block px-4 py-2 text-sm text-gray-900"
+                          )}
+                        >
+                          Himachal
+                        </Link>
+                      )}
+                    </Menu.Item>
+
                     <Menu.Item>
                       {({ active }) => (
                         <Link
                           to="Destination/South-India"
                           className={classNames(
-                            active ? "bg-gray-100" : "",
-                            "block px-4 py-2 text-sm text-gray-700"
+                            active ? "bg-blue-500" : "",
+                            "block px-4 py-2 text-sm text-gray-900"
                           )}
                         >
                           South India
@@ -205,13 +224,13 @@ export default function Navbar() {
               </Menu>
               <Link
                 to="/about"
-                className="text-white hover:bg-gray-700  block rounded-md px-3 py-2 text-base font-medium"
+                className="text-white hover:bg-blue-500 block rounded-md px-3 py-2 text-base font-medium"
               >
                 About Us
               </Link>
               <Link
                 to="/contact"
-                className="text-white hover:bg-gray-700  block rounded-md px-3 py-2 text-base  font-medium"
+                className="text-white hover:bg-blue-500 block rounded-md px-3 py-2 text-base font-medium"
               >
                 Contact
               </Link>
