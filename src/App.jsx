@@ -30,13 +30,13 @@ function App() {
             />
             <Route path="Terms-Of-Service" element={<TermsOfService />} />
             <Route path="Destination/Ladakh" element={<LadakhTours />} />
-            <Route path="Ladakh/:tourId" element={<LadakhTourDetails />} />
+            <Route path="Ladakh/:slug" element={<LadakhTourDetails />} />
             <Route
               path="Destination/South-India"
               element={<SouthIndiaTours />}
             />
             <Route
-              path="South-India/:tourId"
+              path="South-India/:slug"
               element={<SouthIndiaTourDetails />}
             />
           </Route>

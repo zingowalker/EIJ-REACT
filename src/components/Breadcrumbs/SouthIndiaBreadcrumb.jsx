@@ -4,17 +4,17 @@ import { Link } from "react-router-dom";
 export const SouthIndiaBreadcrumb = () => {
   return (
     <nav
-      className="flex text-gray-900 relative top-0 dark:text-gray-900 justify-center items-center"
+      className="flex text-gray-900 relative top-0 justify-center items-center"
       aria-label="Breadcrumb"
     >
       <ol className="inline-flex items-center space-x-1 md:space-x-3">
         <li className="inline-flex items-center">
           <Link
             to="/"
-            className="text-gray-900 dark:text-gray-900 inline-flex ml-1 md:ml-2 text-sm font-medium hover:underline"
+            className="text-gray-900 inline-flex ml-1 md:ml-2 text-sm font-medium hover:underline"
           >
             <svg
-              className="w-5 h-5 mr-2.5"
+              className="w-5 h-5 mr-2.5 text-blue-500"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ export const SouthIndiaBreadcrumb = () => {
         <li>
           <div className="flex items-center">
             <svg
-              className="w-6 h-6 text-gray-900 dark:text-gray-900"
+              className="w-6 h-6 text-blue-500"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ export const SouthIndiaBreadcrumb = () => {
                 clipRule="evenodd"
               ></path>
             </svg>
-            <p className="text-gray-900 dark:text-gray-900 ml-1 md:ml-2 text-sm font-medium">
+            <p className="text-gray-900 ml-1 md:ml-2 text-sm font-medium">
               Destination
             </p>
           </div>
@@ -46,7 +46,7 @@ export const SouthIndiaBreadcrumb = () => {
         <li>
           <div className="flex items-center">
             <svg
-              className="w-6 h-6 text-gray-900 dark:text-gray-900"
+              className="w-6 h-6 text-blue-500"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ export const SouthIndiaBreadcrumb = () => {
             </svg>
             <Link
               to="/South-India/1"
-              className="text-gray-900 dark:text-gray-900 ml-1 md:ml-2 text-sm font-medium hover:underline"
+              className="text-gray-900 ml-1 md:ml-2 text-sm font-medium hover:underline"
             >
               South India
             </Link>

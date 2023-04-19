@@ -1,25 +1,27 @@
 import { Link, useNavigate, useParams, useLocation } from "react-router-dom";
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/20/solid";
+import slugify from "slugify";
 
-import TOURS from "../../../ladakh.js";
+import LADAKH from "../../../ladakh.js";
 
 const LadakhTourDetails = () => {
   // const navigate = useNavigate();
-  const { tourId } = useParams();
+  const { slug } = useParams();
   // const { pathname } = useLocation();
 
   // get product
-  const ladakhTour = TOURS.find((tour) => tour.id === parseInt(tourId));
+  // const ladakhTour = LADAKH.find((tour) => tour.id == parseInt(tourId));
 
+  const ladakhTour = LADAKH.find((tour) => slugify(tour.title) === slug);
   // use == instead of === if useParams fails to get the id
   // or just check data type or use parseInt(id)
 
   // console.log(typeof(productId))
 
-  const { id, title, longDesc, desc, src, itinerary } = ladakhTour;
-  // console.log("tour id ", tourId)
-  // console.log("tour ", ladakhTour)
+  const { id, title, desc, src, itinerary } = ladakhTour;
+  // console.log("tour id ", tourId);
+  // console.log("tour ", ladakhTour);
 
   return (
     <>
@@ -47,10 +49,10 @@ const LadakhTourDetails = () => {
           <li className="inline-flex items-center">
             <Link
               to="/"
-              className="text-gray-900 dark:text-gray-900 inline-flex ml-1 md:ml-2 text-sm font-medium hover:underline"
+              className="text-gray-900 inline-flex ml-1 md:ml-2 text-sm font-medium hover:underline"
             >
               <svg
-                className="w-5 h-5 mr-2.5"
+                className="w-4 h-4 mr-2.5 text-blue-500"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +65,7 @@ const LadakhTourDetails = () => {
           <li>
             <div className="flex items-center">
               <svg
-                className="w-6 h-6 text-gray-900 dark:text-gray-900"
+                className="w-4 h-4 text-blue-500"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +78,7 @@ const LadakhTourDetails = () => {
               </svg>
               <Link
                 to="/Destination/Ladakh"
-                className="text-gray-900 dark:text-gray-900 ml-1 md:ml-2 text-sm font-medium hover:underline"
+                className="text-gray-900 ml-1 md:ml-2 text-sm font-medium hover:underline"
               >
                 Ladakh
               </Link>
@@ -85,7 +87,7 @@ const LadakhTourDetails = () => {
           <li>
             <div className="flex items-center">
               <svg
-                className="w-6 h-6 text-gray-900 dark:text-gray-900"
+                className="w-4 h-4 text-blue-500 "
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -97,8 +99,7 @@ const LadakhTourDetails = () => {
                 ></path>
               </svg>
               <Link
-                className="text-gray-900 dark:text-gray-900 ml-1 md:ml-2 text-sm font-medium hover:underline"
-                // to={name.id}>{title}
+                className="text-gray-900 ml-1 md:ml-2 text-sm font-medium hover:underline"
                 to={id.title}
               >
                 {" "}

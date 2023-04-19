@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import slugify from "slugify";
+
 import LADAKH from "../../../ladakh.js";
 import LadakhBreadcrumb from "../../components/Breadcrumbs/LadakhBreadcrumb";
 import LadakhBanner from "../../components/Banner/LadakhBanner";
-import { Link } from "react-router-dom";
-import { useState } from "react";
 
 export const LadakhTours = () => {
   const [isTruncated, setIsTruncated] = useState(true);
@@ -26,6 +28,8 @@ export const LadakhTours = () => {
   function toggleIsTruncated() {
     setIsTruncated(!isTruncated);
   }
+
+  // const slug = slugify(id.toString(), { lower: true });
 
   return (
     <>
@@ -62,8 +66,11 @@ export const LadakhTours = () => {
               </p>
               <Link
                 className="inline-flex items-center -mx-1 text-sm text-[#3195ff] capitalize transition-colors duration-300 transform dark:text-[#3195ff] hover:underline hover:text-red-500 dark:hover:text-red-500"
-                to={`/Ladakh/${tour.id}`}
+                // to={`/Ladakh/${tour.id}`}
+                to={`/Ladakh/${slugify(`${tour.title}`)}`}
               >
+                {/* {title} */}
+
                 <span className="mx-1">read more</span>
                 <svg
                   className="w-4 h-4 mx-1 rtl:-scale-x-100"

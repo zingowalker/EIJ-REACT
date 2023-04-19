@@ -1,4 +1,5 @@
 import { useState } from "react";
+import slugify from "slugify";
 
 import SouthIndiaBreadcrumb from "../../components/Breadcrumbs/SouthIndiaBreadcrumb";
 import SouthIndiaBanner from "../../components/Banner/SouthIndiaBanner";
@@ -72,7 +73,9 @@ export const SouthIndiaTours = () => {
               </p>
               <Link
                 className="inline-flex items-center -mx-1 text-sm text-[#3195ff] capitalize transition-colors duration-300 transform dark:text-[#3195ff] hover:underline hover:text-red-500 dark:hover:text-red-500"
-                to={`/South-India/${tour.id}`}
+                to={`/South-India/${slugify(`${tour.title}`)}`}
+                // to={`/Ladakh/${slugify(`${tour.title}`)}`}
+
               >
                 <span className="mx-1">read more</span>
                 <svg

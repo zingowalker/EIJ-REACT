@@ -1,7 +1,7 @@
 const SOUTHINDIA = [
   {
     id: 1,
-    title: "South India with Kumarakom",
+    title: "South India with Kumarakom 15 Days",
     desc: "Chennai - Pondicherry – Tanjore - Trichy - Tanjore - Madurai – Periyar – Kumarakom - Houseboat- Allepey - Cochin - Calicut - Mysore - Somnathpur - Mysore -Bangalore - Madras",
     src: "https://images.unsplash.com/photo-1624554305378-0f440dd3a8c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fEt1bWFyYWtvbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
     alt: "A house boat unsplash photo",
@@ -15,32 +15,32 @@ const SOUTHINDIA = [
     highlights: "Highlights",
     itinerary: [
       {
-        heading: "Day 01: Arrival Chennai (Madras) ",
+        heading: "Day 01: Arrival Chennai (Madras)",
         description:
           "Arrival and reception in the evening by your English speaking guide. Overnight in Madras. ",
       },
       {
-        heading: "Day 02: Madras - Pondicherry (approximately 165 km) ",
+        heading: "Day 02: Madras - Pondicherry - 165 km",
         description:
-          'After a brief city tour by train to Kanchipuram, the "city of the 1000 Golden Temple". You will visit among others, the widely visible Ekambaresvara Temple and the temples of Mahabalipuram, UNESCO World Heritage Site. Overnight in Pondicherry. Incl. Dinner. ',
+          'After a brief city tour by train to Kanchipuram, the "city of the 1000 Golden Temple". You will visit among others, the widely visible Ekambaresvara Temple and the temples of Mahabalipuram, UNESCO World Heritage Site. Overnight in Pondicherry. Incl. Dinner.',
       },
       {
-        heading: "Day 03: Pondicherry - Tanjore (approximately 240 km)",
+        heading: "Day 03: Pondicherry - Tanjore - 240 km",
         description:
           "After a short city tour, you leave Pondicherry, the former colonial possession of the French and interrupt the drive to Chidambaram to visit the great Nataraja temple complex. The next two nights in Tanjore. Incl. Dinner.",
       },
       {
-        heading: "Day 04: Tanjore - Trichy - Tanjore (120 km) ",
+        heading: "Day 04: Tanjore - Trichy - Tanjore - 120 km",
         description:
           "Tour of the city and the fort with a huge rock temple in Trichy and situated near the temple town of Srirangam. Then visit the temple in Tanjore. Incl. Dinner. ",
       },
       {
-        heading: "Day 05: Madurai - Periyar (approx. 180 km)",
+        heading: "Day 05: Madurai - Periyar - 180km",
         description:
           "Afternoon take a boat ride on the Periyar Lake, part of the same national park where you may see wild elephants, wild boars, Sambar, Gaur and many birds can be observed. Overnight in Periyar. Incl. Dinner.",
       },
       {
-        heading: "Day 06: Periyar – Kumarakom (140 Km )",
+        heading: "Day 06: Periyar – Kumarakom - 140Km",
         description:
           "You'll leave just after breakfast, driving back down to the coast and the melodically named town of Kumarakom on the banks of lake Vembanad Lapped upon by inviting waters, cooled by fresh breeze and waving coconut fronds…awaits the sought after blissful tranquility called “Lakesong”. Lakesong Resort is another appealing venture of the Eastend Group. It is an idyllic retreat that offers an unparallel opportunity to savor the magical sensation of “God’s own country”. Nestled among the serene backwaters of Kumarakom, Lakesong comprises of 8 acres of facility packed leisure land. It is indeed a retreat with a difference in that it offers excellent facilities with uncompromising quality and superb service. Overnight stay at the resort. Incl. Dinner.",
       },
@@ -55,47 +55,47 @@ const SOUTHINDIA = [
           "The Kerala backwaters consist of a complex network of lagoons, lakes, & canals and are best experienced while slowly punting down the labyrinth of canals in a traditional thatch-roofed houseboat, known as 'kettuvallam'. Embark your houseboat, a renovated cargo boat with either one or two bedrooms, kitchenette and all modern conveniences. A crew will cater for your comforts and meals. See life on the banks, lush green rice fields, and coconut groves with occasional temple or church as you cruise through thecanals. An experience you will savour for a long time. Overnight on the houseboat. Incl. Lunch and dinner.",
       },
       {
-        heading: "Day 10: Allepey - Cochin (80 km)",
+        heading: "Day 10: Allepey - Cochin - 80km",
         description:
           "Disembark at the boat jetty and driver to cochin. Later, proceed on sightseeing tour of Kochi, visit the ancient Synagogue, Mattancherry Palace, and St. Francis Church. Pass by the Chinese fishing nets in the harbour and arrive at Bolgatty Island. Enjoy a cultural show showcasing the state's traditional art and culture this evening. Incl. Dinner.",
       },
       {
-        heading: "Day 11: Cochin - Calicut (approximately 220 km)",
+        heading: "Day 11: Cochin - Calicut - 220km",
         description:
           "Proceed to Calicut. Take a stroll through the city, where you see the main sights, including the Jain temple, the St. Francis Church, a weaving mill and a local market. Incl. Dinner. Overnight at Calicut.",
       },
       {
-        heading: "Day 12: Calicut - Mysore (200 km)",
+        heading: "Day 12: Calicut - Mysore - 200km",
         description:
           "Visit the ancient capital of the princely Srirangapatnam and Mysore, with its fairy tale appearance Maharajapalast. Then visit the Chamundi Hill. The next two nights in Mysore. Incl. Dinner.",
       },
       {
-        heading: "Day 13: Mysore - Somnathpur - Mysore (approx. 70 km)",
+        heading: "Day 13: Mysore - Somnathpur - Mysore - 70km",
         description:
           "In the west Somnathpur visit the star-based Hoysala temple, whose walls richly decorated with frescoes. Afternoon leisure. Incl. Dinner.",
       },
       {
-        heading: "Day 14: Mysore - Bangalore - Chennai (approx. 440km)",
+        heading: "Day 14: Mysore - Bangalore - Chennai - 440km",
         description:
           "Transfer to the train station to Bangalore, short city tour and then you can in the five to Madras Zugrückfahrt the landscape one last time to admire. Transfer to Airport Madras (Chennai). Incl. Dinner.",
       },
       {
-        heading: "Day 15: Departure ",
+        heading: "Day 15: Departure",
         description: "Early morning transfer to Airport for your departure.",
       },
     ],
   },
   {
     id: 2,
-    title: "Ayurveda In Kerala & A Backwater Cruise",
+    title: "Ayurveda Therapy & A Backwater Cruise 7 Days",
     desc: "Cochin – Allepy – Houseboat Cruise – Kovalam – Ayurvedic therapy - Trivandrum",
     src: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QXl1cnZlZGElMjBtYXNzYWdlJTIwa2VyYWxhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
     alt: "A house boat unsplash photo",
     tags: [
-      "South India",
-      "Ayurveda Massage",
+      "Kanyakumar",
+      "Ayurveda Therapy",
       "Kathakali Dance",
-      "Museum",
+      "Dutch Palace",
       "Backwater",
     ],
     highlights: "Highlights",
@@ -106,13 +106,12 @@ const SOUTHINDIA = [
           "On arrival in Kochin you will be received and transferred to your hotel. In the afternoon you proceed on a city tour of Kochi, earlier known as Cochin, one of the finest natural harbors on the Arabian Sea coast. Kochin’s cosmopolitan character is reflected in the buildings and structures representing different religions of the world. A city of peninsulas and islands, today it is Kerala’s commercial hub. City sightseeing includes the Dutch Palace, built by the Portuguese and present to the Raja of Cochin in 1555, Jewish Synagogue built in 1568, St. Francis Church - the oldest Protestant church built by Portuguese in 1524 and where Vasco da Gama was buried and get to see a display of Chinese fishing nets. Kochi is also called the Queen of Arabian Sea. In the evening you get to witness a Kathakali Dance. Overnight stay at your hotel.",
       },
       {
-        heading:
-          "Day 02: Kochin - Alleypey - By Surface / 63 Kms / Approx 2 Hrs",
+        heading: "Day 02: Kochin - Alleypey - 63Kms",
         description:
           "After breakfast you drive to Allepey along the western coastline with swaying palm trees keeping you company along the way. On arrival at Allepey you check in to your House Boat. Later cruise in and around Allepey. Overnight at House Boat.",
       },
       {
-        heading: "Day 03: Allepey – Kovalam  - By Surface / 174 Kms / 4 Hrs",
+        heading: "Day 03: Allepey – Kovalam  - 174Kms",
         description:
           "After having experienced the serenity of the backwaters from your houseboat you check out and drive to Kovalam, a picturesque beach. Overnight stay at your hotel.",
       },
@@ -132,8 +131,7 @@ const SOUTHINDIA = [
           "Today in the afternoon you proceed on an excursion to visit Kanyakumari. En-route you will be visiting Padmanabhapuram Palace and Suchindram Temple.  Kanyakumari is also called Cape Comorin. Here is where the three oceans, the Arabian Sea, the Indian Ocean and Bay of Bengal meet. It is the only point from where the sunset and sunrise can be seen equally well. Visit the Rock Memorial and witness the beautiful view of sunset. Drive back to Kovalam.",
       },
       {
-        heading:
-          "Day 07 Kovalam – TrivandrumTRIVANDRUM – By Surface / 13 Km / Approx 30 Mins",
+        heading: "Day 07 Kovalam – Trivandrum - 13Kms",
         description:
           "A short drive takes you to Trivandrum Airport to board your flight for your onward destination.",
       },
@@ -141,13 +139,13 @@ const SOUTHINDIA = [
   },
   {
     id: 3,
-    title: "SOUTH INDIA EXPLORER",
+    title: "South India Explorer",
     desc: "Bangalore – Hassan – Mysore – Mudumalai – Ooty – Munnar – Alappuzha - Kochin",
     src: "https://images.unsplash.com/photo-1647502554819-35035d0921c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80",
     alt: "A house boat unsplash photo",
     tags: [
       "South India",
-      "Ayurveda Massage",
+      "Ayurveda Therapy",
       "Kathakali Dance",
       "Museum",
       "Backwater",
@@ -160,13 +158,12 @@ const SOUTHINDIA = [
           "On arrival in Kochin you will be received and transferred to your hotel. In the afternoon you proceed on a city tour of Kochi, earlier known as Cochin, one of the finest natural harbors on the Arabian Sea coast. Kochin’s cosmopolitan character is reflected in the buildings and structures representing different religions of the world. A city of peninsulas and islands, today it is Kerala’s commercial hub. City sightseeing includes the Dutch Palace, built by the Portuguese and present to the Raja of Cochin in 1555, Jewish Synagogue built in 1568, St. Francis Church - the oldest Protestant church built by Portuguese in 1524 and where Vasco da Gama was buried and get to see a display of Chinese fishing nets. Kochi is also called the Queen of Arabian Sea. In the evening you get to witness a Kathakali Dance. Overnight stay at your hotel.",
       },
       {
-        heading:
-          "Day 02: Kochin - Alleypey - By Surface / 63 Kms / Approx 2 Hrs",
+        heading: "Day 02: Kochin - Alleypey - 63Kms",
         description:
           "After breakfast you drive to Allepey along the western coastline with swaying palm trees keeping you company along the way. On arrival at Allepey you check in to your House Boat. Later cruise in and around Allepey. Overnight at House Boat.",
       },
       {
-        heading: "Day 03: Allepey – Kovalam  - By Surface / 174 Kms / 4 Hrs",
+        heading: "Day 03: Allepey – Kovalam  - 174Kms",
         description:
           "After having experienced the serenity of the backwaters from your houseboat you check out and drive to Kovalam, a picturesque beach. Overnight stay at your hotel.",
       },
@@ -186,8 +183,7 @@ const SOUTHINDIA = [
           "Today in the afternoon you proceed on an excursion to visit Kanyakumari. En-route you will be visiting Padmanabhapuram Palace and Suchindram Temple.  Kanyakumari is also called Cape Comorin. Here is where the three oceans, the Arabian Sea, the Indian Ocean and Bay of Bengal meet. It is the only point from where the sunset and sunrise can be seen equally well. Visit the Rock Memorial and witness the beautiful view of sunset. Drive back to Kovalam.",
       },
       {
-        heading:
-          "Day 07 Kovalam – TrivandrumTRIVANDRUM – By Surface / 13 Km / Approx 30 Mins",
+        heading: "Day 07 Kovalam – Trivandrum - 13Kms",
         description:
           "A short drive takes you to Trivandrum Airport to board your flight for your onward destination.",
       },
