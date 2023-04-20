@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import slugify from "slugify";
 
-import HIMACHAL from "../../../Himachal.js";
+import HIMACHAL from "../../../himachal.js";
 import HimachalBreadcrumb from "../../components/Breadcrumbs/HimachalBreadcrumb";
 import HimachalBanner from "../../components/Banner/HimachalBanner";
 
@@ -66,7 +66,6 @@ export const HimachalTours = () => {
                 className="inline-flex items-center -mx-1 text-sm text-[#3195ff] capitalize transition-colors duration-300 transform dark:text-[#3195ff] hover:underline hover:text-red-500 dark:hover:text-red-500"
                 to={`/Himachal/${slugify(`${tour.title}`)}`}
               >
-
                 <span className="mx-1">read more</span>
                 <svg
                   className="w-4 h-4 mx-1 rtl:-scale-x-100"
