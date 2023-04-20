@@ -4,8 +4,8 @@ import React from "react";
 const About = () => {
   return (
     <section className="flex items-center justify-center max-auto py-32 bg-[#fff] text-gray-900">
-      <div className="container text-center md:text-left md:px-30 lg:px-60 sm:px-10">
-        <div className="lg:text-lg leading-relaxed">
+      <div className="container text-center md:text-left md:px-30 lg:px-60 px-8">
+        <div className="md:text-base leading-relaxed text-sm">
           <h1 className="text-center md:text-4xl text-2xl font-bold mb-5 border-b-[2px] border-indigo-600 pb-2">
             About Us
           </h1>

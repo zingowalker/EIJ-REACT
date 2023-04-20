@@ -1,13 +1,7 @@
-const orderedList = [
-  "Travel insurance is strongly recommended for all travelers and is a condition of booking.",
-  "It is your responsibility to ensure that you have adequate travel insurance to cover the full duration of your trip. Your travel insurance should include coverage for trip cancellation, trip interruption, emergency medical expenses, emergency evacuation and repatriation, baggage and personal effects, and personal liability.",
-  "We strongly recommend that you purchase travel insurance at the time of booking to ensure coverage for pre-existing medical conditions, as many insurance policies have exclusions fo pre-existing conditions.",
-];
-
 const CancellationPolicy = () => {
   return (
-    <section className="flex items-center justify-center max-7xl py-32  bg-[#fff] text-gray-900">
-      <div className="container text-center md:text-left  md:text-lg md:px-30 lg:px-60 sm:px-10">
+    <section className="flex items-center justify-center max-7xl py-32 bg-[#fff] text-gray-900">
+      <div className="container leading-relaxed text-center text-sm md:text-left  md:text-base md:px-30 lg:px-60 px-8">
         <div className="">
           <h1 className="md:text-4xl text-2xl font-bold mb-5 text-center">
             Cancellation Policy

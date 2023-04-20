@@ -7,7 +7,7 @@ const orderedList = [
 const TermsOfService = () => {
   return (
     <section className="flex items-center justify-center max-7xl py-32  bg-[#fff] text-gray-900">
-      <div className="container text-center md:text-left  md:text-lg md:px-30 lg:px-60 sm:px-10">
+      <div className="container leading-relaxed text-sm text-center md:text-left  md:text-base md:px-30 lg:px-60 px-8">
         <div className="">
           <h1 className="md:text-4xl text-2xl font-bold mb-5 text-center">
             Terms of service
