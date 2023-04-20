@@ -23,7 +23,8 @@ export const LadakhTours = () => {
 
   Whether you're traveling solo, with friends, families, or that special someone, 
   Leh is a safe and economical destination. Explore the best tourist places in Leh with the best Leh tour packages to experience its breathtaking beauty 
-  and unforgettable memories. So, make sure to visit Leh and experience its secrets firsthand.`;
+  and unforgettable memories. So, make sure to visit Leh and experience its secrets firsthand.
+  `;
 
   const maxLength = 350;
 
@@ -46,10 +47,10 @@ export const LadakhTours = () => {
       <LadakhBanner />
       <LadakhBreadcrumb />
       <div className="flex justify-center items-center py-8 px-8">
-        <div className="container rounded shadow-md shadow-gray-800 px-2 py-2 leading-relaxed  first-letter:text-4xl first-letter:font-bold first-letter:text-blue-500 md:text-lg dark:first-letter:text-blue-500 first-letter:mr-2 text-center text-sm md:text-left">
+        <div className="container rounded shadow-md shadow-gray-800 px-2 py-2 leading-relaxed  first-letter:text-4xl first-letter:font-bold first-letter:text-blue-500 lg:text-base dark:first-letter:text-blue-500 first-letter:mr-2 text-center text-sm md:text-left">
           <p style={{ whiteSpace: "pre-wrap" }}>{truncatedText}</p>
           <button
-            className="text-blue-500 hover:text-blue-700 font-semibold mr-22"
+            className="text-blue-500 hover:text-blue-700 font-100 lg:text-sm"
             onClick={toggleIsTruncated}
           >
             {isTruncated ? "Read more + " : "Read less - "}

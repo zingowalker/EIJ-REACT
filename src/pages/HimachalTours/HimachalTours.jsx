@@ -35,10 +35,10 @@ export const HimachalTours = () => {
       <HimachalBanner />
       <HimachalBreadcrumb />
       <div className="flex justify-center items-center py-8 px-8">
-        <div className="container rounded shadow-md shadow-gray-800 px-2 py-1 leading-relaxed first-letter:text-4xl first-letter:font-bold first-letter:text-blue-500 md:text-left lg:text-lg dark:first-letter:text-blue-500 first-letter:mr-1 text-center text-sm">
+        <div className="container rounded shadow-md shadow-gray-800 px-2 py-1 leading-relaxed first-letter:text-4xl first-letter:font-bold first-letter:text-blue-500 md:text-left lg:text-base dark:first-letter:text-blue-500 first-letter:mr-1 text-center text-sm">
           <p style={{ whiteSpace: "pre-wrap" }}>{truncatedText}</p>
           <button
-            className="text-blue-500 hover:text-blue-700 font-semibold mr-22"
+            className="text-blue-500 hover:text-blue-700 font-100 lg:text-sm"
             onClick={toggleIsTruncated}
           >
             {isTruncated ? "Read more + " : "Read less - "}

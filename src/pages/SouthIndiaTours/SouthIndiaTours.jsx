@@ -32,8 +32,7 @@ export const SouthIndiaTours = () => {
   population, making it an attractive destination for investment and business.
   
   In conclusion, South India offers a unique blend of nature, history, culture, and cuisine that makes it an exciting destination for travelers. 
-  With its diverse landscapes, rich cultural heritage, and delicious cuisine, South India is a must-visit destination for any traveler looking to 
-  explore the beauty and diversity of India.
+  With its diverse landscapes, rich cultural heritage, and delicious cuisine, South India is a must-visit destination for any traveler looking to explore the beauty and diversity of India.
   `;
 
   const maxLength = 350;
@@ -57,12 +56,12 @@ export const SouthIndiaTours = () => {
       <div className="flex justify-center items-center py-8 px-8">
         <div
           className="container rounded shadow-md shadow-gray-800 px-2 py-2 leading-relaxed
-         first-letter:text-4xl first-letter:font-bold first-letter:text-blue-500 lg:text-lg 
+         first-letter:text-4xl first-letter:font-bold first-letter:text-blue-500 lg:text-base 
          dark:first-letter:text-blue-500 first-letter:mr-2 text-center text-sm md:text-left"
         >
           <p style={{ whiteSpace: "pre-wrap" }}>{truncatedText}</p>
           <button
-            className="text-blue-500 hover:text-blue-700 font-semibold mr-22"
+            className="text-blue-500 hover:text-blue-700 font-100 lg:text-sm"
             onClick={toggleIsTruncated}
           >
             {isTruncated ? "Read more + " : "Read less - "}
