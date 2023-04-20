@@ -8,13 +8,15 @@ const Footer = () => {
           src="../images/background.jpg"
           alt="background"
         />
-        <div className="flex pt-36 md:pt-32 lg:pt-40 xl:pt-96   px-4 md:px-6  xl:px-20 flex-col justify-start items-start md:justify-center md:items-center relative z-10">
-          <div className="flex  flex-col items-start justify-start xl:justify-center xl:space-x-8 xl:flex-row">
+        <div className="flex pt-36 md:pt-30 lg:pt-40 xl:pt-96  px-4 md:px-6 xl:px-20 flex-col justify-start items-start md:justify-center md:items-center relative z-10">
+          <div className="flex flex-col items-start justify-start xl:justify-center xl:space-x-8 xl:flex-row">
             <div className="flex justify-start items-center space-x-4">
-              <a href="/" className="cursor-pointer w-12">
-                <img src="../images/logo.png" alt="logo" />
-              </a>
-              <p className="w-60 text-xl xl:text-2xl font-semibold leading-normal text-white">
+              <div className="w-12">
+                <a href="/" className="cursor-pointer6">
+                  <img src="../images/logo.png" alt="logo" />
+                </a>
+              </div>
+              <p className="w-60 text-lg xl:text-2xl font-semibold leading-normal bg-gradient-to-l from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent">
                 Eco India Journeys
               </p>
             </div>
@@ -61,7 +63,7 @@ const Footer = () => {
               </div>
               <div className=" xl:w-72 flex justify-start items-start flex-col space-y-6">
                 <h2 className="text-base xl:text-xl font-bold xl:font-semibold leading-4 xl:leading-5 text-white">
-                  Contacts
+                  Support
                 </h2>
                 <button className="text-base text-left hover:text-gray-400 leading-none text-gray-100">
                   Call +91 9419977421
@@ -103,7 +105,7 @@ const Footer = () => {
                 Sitemap
               </button>
             </div>
-            <div className="flex justify-start md:justify-end items-start  w-full md:w-auto md:items-center space-x-6 ">
+            <div className="flex justify-start md:justify-end items-start w-full md:w-auto md:items-center space-x-6 ">
               <a
                 href="https://twitter.com/ecoindia2023"
                 target="_blank"

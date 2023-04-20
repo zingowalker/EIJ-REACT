@@ -9,7 +9,7 @@ const TermsOfService = () => {
     <section className="flex items-center justify-center max-7xl py-32  bg-[#fff] text-gray-900">
       <div className="container leading-relaxed text-sm text-center md:text-left  md:text-base md:px-30 lg:px-60 px-8">
         <div className="">
-          <h1 className="md:text-4xl text-2xl font-bold mb-5 text-center">
+          <h1 className="md:text-2xl text-lg font-bold mb-5 text-center">
             Terms of service
           </h1>
           <p className="text-sm mb-8 text-center">
@@ -24,7 +24,7 @@ const TermsOfService = () => {
             our Services, you agree to be bound by these terms.
           </p>
           <p className="pb-5">
-            <span className="font-bold text-lg">Description of Services</span>{" "}
+            <span className="font-bold">Description of Services</span>{" "}
             <br />
             At our company, we provide a range of services that encompass
             motorcycle tours, treks, package tours, luxury tours, mountaineering
@@ -32,14 +32,14 @@ const TermsOfService = () => {
             right to modify or terminate any service without prior notice.
           </p>
           <p className="pb-5">
-            <span className="font-bold text-lg">Validity</span> <br />
+            <span className="font-bold">Validity</span> <br />
             We want to let you know that the dates, itineraries, and prices you
             see on our website and social media are valid between January 1st,
             2023, and December 31st, 2024. After this period, any dates,
             itineraries, and prices displayed are for reference only.
           </p>
           <p className="pb-5">
-            <span className="font-bold text-lg">Booking</span> <br />
+            <span className="font-bold">Booking</span> <br />
             <span className="font-semibold">1.1 Deposit</span> <br />
             Regarding booking, we ask our clients to make a deposit payment
             towards the complete booking expense. In case you book within 46

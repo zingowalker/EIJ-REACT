@@ -9,7 +9,7 @@ function Hero() {
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
             <div className="text-center">
               <h2 className="text-2xl leading-6 text-center px-4 mb-4">
-                <span className="text-[#3195ff] font-bold">
+                <span className="text-[#3195ff] font-bold bg-gradient-to-l from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent">
                   Eco India Journeys
                 </span>
               </h2>

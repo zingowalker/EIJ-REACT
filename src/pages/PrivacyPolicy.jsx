@@ -3,7 +3,7 @@ const PrivacyPolicy = () => {
     <section className="flex items-center justify-center max-7xl py-32  bg-[#fff] text-gray-900">
       <div className="container leading-relaxed text-center text-sm md:text-left  md:text-base md:px-30 lg:px-60 px-8">
         <div className="">
-          <h1 className="md:text-4xl text-2xl font-bold mb-5 text-center">
+          <h1 className="md:text-2xl text-lg font-bold mb-5 text-center">
             Privacy policy
           </h1>
           <p className="text-sm mb-8 text-center">
@@ -17,7 +17,7 @@ const PrivacyPolicy = () => {
           </p>
 
           <p className="pb-5">
-            <span className="font-bold text-lg">
+            <span className="font-bold">
               Collection of personal information
             </span>{" "}
             <br />
@@ -28,7 +28,7 @@ const PrivacyPolicy = () => {
           </p>
 
           <p className="pb-5">
-            <span className="font-bold text-lg">
+            <span className="font-bold">
               How We Use Your Information
             </span>{" "}
             <br />
@@ -41,7 +41,7 @@ const PrivacyPolicy = () => {
           </p>
 
           <p className="pb-5">
-            <span className="font-bold text-lg">
+            <span className="font-bold">
               How We Protect Your Information
             </span>{" "}
             <br />
@@ -54,7 +54,7 @@ const PrivacyPolicy = () => {
           </p>
 
           <p className="pb-5">
-            <span className="font-bold text-lg">Use of Cookies</span> <br />
+            <span className="font-bold">Use of Cookies</span> <br />
             Our website uses cookies to enhance your browsing experience.
             Cookies are small text files that are stored on your computer or
             mobile device when you visit our website. Cookies help us remember
@@ -64,7 +64,7 @@ const PrivacyPolicy = () => {
           </p>
 
           <p className="pb-5">
-            <span className="font-bold text-lg">Third-Party Websites</span>{" "}
+            <span className="font-bold">Third-Party Websites</span>{" "}
             <br />
             Our website may contain links to third-party websites. We are not
             responsible for the privacy practices or content of these websites.
@@ -73,7 +73,7 @@ const PrivacyPolicy = () => {
           </p>
 
           <p className="pb-5">
-            <span className="font-bold text-lg">
+            <span className="font-bold">
               Changes to Our Privacy Policy
             </span>{" "}
             <br />
@@ -84,7 +84,7 @@ const PrivacyPolicy = () => {
           </p>
 
           <p className="pb-5">
-            <span className="font-bold text-lg">Contact Us</span> <br />
+            <span className="font-bold">Contact Us</span> <br />
             If you have any questions or concerns about our privacy policy,
             please contact us at ecoindiajourneys@gmail.com.
           </p>

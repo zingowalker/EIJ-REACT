@@ -3,14 +3,14 @@ const CancellationPolicy = () => {
     <section className="flex items-center justify-center max-7xl py-32 bg-[#fff] text-gray-900">
       <div className="container leading-relaxed text-center text-sm md:text-left  md:text-base md:px-30 lg:px-60 px-8">
         <div className="">
-          <h1 className="md:text-4xl text-2xl font-bold mb-5 text-center">
+          <h1 className="md:text-2xl text-lg font-bold mb-5 text-center">
             Cancellation Policy
           </h1>
           <p className="text-sm mb-8 text-center">
             Last updated on April 16, 2023
           </p>
           <p className="pb-5">
-            <span className="font-bold text-lg">Trip Fees</span> <br />
+            <span className="font-bold">Trip Fees</span> <br />
             To pay for the trip, you can either make an online transfer or a
             cash deposit. Instructions for payment will be included in your
             confirmation email. After completing the transfer, please send us a
@@ -18,7 +18,7 @@ const CancellationPolicy = () => {
             efficiently process your reservation.
           </p>
           <p className="pb-5">
-            <span className="font-bold text-lg">Cancellation</span> <br />
+            <span className="font-bold">Cancellation</span> <br />
             If you need to cancel your services for any reason, whether it be
             avoidable or unavoidable, please notify Eco India Journeys in
             writing at ecoindiajourneys@gmail.com. Refunds based on the total
