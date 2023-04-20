@@ -9,14 +9,17 @@ import HimachalBanner from "../../components/Banner/HimachalBanner";
 export const HimachalTours = () => {
   const [isTruncated, setIsTruncated] = useState(true);
 
-  const himachaldesc = `
-  Spiti's topography is marked by high mountains and narrow river valleys with flat land being uncommon. The rugged climate and high altitude make the region unsuitable for human habitation. The magnificent range of Himalayas in the background is beautiful and refreshing. Wild life such as Ibex and Thar can be seen in the herds and snow wolves. You will explore the century’s old monasteries belonging to Tibetan Buddhism where monks practice meditation and other monastic rituals. They preserve old stucco images and Thangkas depicting different life stories of Guru Padmasambhava, the founder of the Gelug-Pa sect. People of Spiti live with their herds of Yak, Sheep and goat. They are hospitable and villages still maintain centuries old tradition. These villages are situated at the highest altitudes of the region, with stunning views of the Himalayas. The area is also home to some of the oldest monasteries in India. Visitors can explore these ancient sites, learn about the history and culture of the region, and experience the unique hospitality of the local people
+  const himachaldesc = `Explore the natural beauty of Dev Bhoomi by booking Himachal Pradesh tour packages from Destination with Eco India Journeys. With exciting offers and deals on bookings, you can experience the breathtaking landscapes of Himachal Pradesh. Booking through Eco India Journeys provides the best deals and a well-curated itinerary that caters to the varying tastes of travelers. Choose from various tour packages, or customize your own according to your preferences.
+
+  Eco India Journeys offers Himachal Pradesh tour packages from Destination for solo travelers and couples alike. If you're fond of cold and cozy places that let you connect with nature, Himachal Pradesh won't disappoint you. You can explore and experience a wide range of activities and places, including river rafting, skiing, paragliding, and more.
+
+  Don't miss this opportunity! Book your Himachal tour packages from Destination now and avail amazing discounts and offers, while receiving 24X7 assistance from our dedicated team at Eco India Journeys.
   `;
 
   const maxLength = 350;
 
   if (himachaldesc.length <= maxLength) {
-    return <p>{himachaldesc}</p>;
+    return <p style={{ whiteSpace: "pre-wrap" }}>{himachaldesc}</p>;
   }
 
   const truncatedText = isTruncated
@@ -27,15 +30,13 @@ export const HimachalTours = () => {
     setIsTruncated(!isTruncated);
   }
 
-  // const slug = slugify(id.toString(), { lower: true });
-
   return (
     <>
       <HimachalBanner />
       <HimachalBreadcrumb />
       <div className="flex justify-center items-center py-8 px-8">
-        <div className="container rounded shadow-md shadow-gray-800 px-2 py-2 leading-relaxed  first-letter:text-7xl first-letter:font-bold first-letter:text-blue-500 lg:text-md dark:first-letter:text-blue-500 first-letter:mr-3 first-letter:float-left">
-          {truncatedText}
+        <div className="container rounded shadow-md shadow-gray-800 px-2 py-1 leading-relaxed first-letter:text-4xl first-letter:font-bold first-letter:text-blue-500 lg:text-md dark:first-letter:text-blue-500 first-letter:mr-1">
+          <p style={{ whiteSpace: "pre-wrap" }}>{truncatedText}</p>
           <button
             className="text-blue-500 hover:text-blue-700 font-semibold mr-22"
             onClick={toggleIsTruncated}

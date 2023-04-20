@@ -9,26 +9,37 @@ import SOUTHINDIA from "../../../southIndia.js";
 export const SouthIndiaTours = () => {
   const [isTruncated, setIsTruncated] = useState(true);
 
-  const southIndiaDesc = `
-    If you're planning a trip to India, you cannot miss the vibrant and culturally rich region of South India. With its diverse landscapes, ancient history, and mouth-watering cuisine, South India is a must-visit destination for every traveler.
+  const southIndiaDesc = `If you're planning a trip to India, you cannot miss the vibrant and culturally   rich region of South India. 
+  With its diverse landscapes, ancient history, and mouth-watering cuisine,  South India is a must-visit destination for every traveler.
 
-    Comprising the states of Andhra Pradesh, Karnataka, Kerala, Tamil Nadu, and Telangana, as well as the union territories of the Andaman and Nicobar Islands, Lakshadweep and Puducherry, South India covers an area of 635,780 km2 or 245,480 sq mi and is home to over 20% of India's population.
+  Comprising the states of Andhra Pradesh, Karnataka, Kerala, Tamil Nadu, and Telangana, as well as the union territories of the 
+  Andaman and Nicobar Islands, Lakshadweep and Puducherry, South India covers an area of 635,780 km2 or 
+  245,480 sq mi and is home to over 20% of India's population.
 
-    From the majestic Western and Eastern Ghats mountain ranges to the stunning beaches of Goa and the backwaters of Kerala, South India offers a wide range of landscapes for nature lovers to explore. The region is also famous for its ancient temples, churches, and mosques, which are a testament to its rich history and cultural diversity.
-
-    South Indian cuisine is known for its bold flavors and use of local spices and herbs. From the crispy dosas and fluffy idlis of Tamil Nadu to the spicy seafood curries of Kerala, South Indian cuisine is a treat for the taste buds.
-
-    When it comes to accommodation, South India offers a range of options for every budget, from luxury resorts to budget guesthouses. Transportation is also easily accessible, with well-connected airports, railways, and roads making it easy to get around the region.
-
-    South India has also been recognized for its socio-economic metrics, with a high literacy rate and a low fertility rate compared to other regions in India. The region has also experienced sustained growth in per-capita income and population, making it an attractive destination for investment and business.
-    
-    In conclusion, South India offers a unique blend of nature, history, culture, and cuisine that makes it an exciting destination for travelers. With its diverse landscapes, rich cultural heritage, and delicious cuisine, South India is a must-visit destination for any traveler looking to explore the beauty and diversity of India.
+  From the majestic Western and Eastern Ghats mountain ranges to the stunning beaches of 
+  Goa and the backwaters of Kerala, South India offers a wide range of landscapes for nature lovers to explore. 
+  The region is also famous for its ancient temples, churches, and mosques, 
+  which are a testament to its rich history and cultural diversity.
+  
+  South Indian cuisine is known for its bold flavors and use of local spices and herbs. From the crispy dosas and fluffy idlis of 
+  Tamil Nadu to the spicy seafood curries of Kerala, South Indian cuisine is a treat for the taste buds.
+  
+  When it comes to accommodation, South India offers a range of options for every budget, from luxury resorts to budget guesthouses. 
+  Transportation is also easily accessible, with well-connected airports, railways, and roads  making it easy to get around the region.
+  
+  South India has also been recognized for its socio-economic metrics, with a high literacy 
+  rate and a low fertility rate compared to other regions in India. The region has also experienced sustained growth in per-capita income and 
+  population, making it an attractive destination for investment and business.
+  
+  In conclusion, South India offers a unique blend of nature, history, culture, and cuisine that makes it an exciting destination for travelers. 
+  With its diverse landscapes, rich cultural heritage, and delicious cuisine, South India is a must-visit destination for any traveler looking to 
+  explore the beauty and diversity of India.
   `;
 
   const maxLength = 350;
 
   if (southIndiaDesc.length <= maxLength) {
-    return <p>{southIndiaDesc}</p>;
+    return <p style={{ whiteSpace: "pre-wrap" }}>{southIndiaDesc}</p>;
   }
 
   const truncatedText = isTruncated
@@ -44,8 +55,12 @@ export const SouthIndiaTours = () => {
       <SouthIndiaBanner />
       <SouthIndiaBreadcrumb />
       <div className="flex justify-center items-center py-8 px-8">
-        <div className="container rounded shadow-md shadow-gray-800 px-2 py-2 leading-relaxed  first-letter:text-7xl first-letter:font-bold first-letter:text-blue-500 lg:text-md dark:first-letter:text-blue-500 first-letter:mr-3 first-letter:float-left">
-          {truncatedText}
+        <div
+          className="container rounded shadow-md shadow-gray-800 px-2 py-2 leading-relaxed
+         first-letter:text-4xl first-letter:font-bold first-letter:text-blue-500 lg:text-lg 
+         dark:first-letter:text-blue-500 first-letter:mr-2 text-center text-sm md:text-left"
+        >
+          <p style={{ whiteSpace: "pre-wrap" }}>{truncatedText}</p>
           <button
             className="text-blue-500 hover:text-blue-700 font-semibold mr-22"
             onClick={toggleIsTruncated}
@@ -75,7 +90,6 @@ export const SouthIndiaTours = () => {
                 className="inline-flex items-center -mx-1 text-sm text-[#3195ff] capitalize transition-colors duration-300 transform dark:text-[#3195ff] hover:underline hover:text-red-500 dark:hover:text-red-500"
                 to={`/South-India/${slugify(`${tour.title}`)}`}
                 // to={`/Ladakh/${slugify(`${tour.title}`)}`}
-
               >
                 <span className="mx-1">read more</span>
                 <svg

@@ -9,16 +9,26 @@ import LadakhBanner from "../../components/Banner/LadakhBanner";
 export const LadakhTours = () => {
   const [isTruncated, setIsTruncated] = useState(true);
 
-  const ladakhdesc = `Leh, situated in northern India, is a sought-after dream destination for travelers from all over the world.
-    With its high altitudes and numerous passes connecting various locations, this frozen paradise offers an unparalleled experience for adventure enthusiasts, families, couples, and solo travelers alike. 
-    While the harsh weather and difficult terrains can be a challenge, Leh's stunning beauty and unique landscape make it a must-visit destination. Despite its growing popularity, Leh remains sparsely crowded even during peak season, making it an ideal destination for those seeking a peaceful escape. For photography enthusiasts, Leh is a paradise that offers a vast empty canvas to paint. 
-    The landscape here is unlike anywhere in India and worldwide, offering unimaginable sights that change every few kilometers. With turquoise blue lakes, beautifully constructed monasteries, and snow-covered mountains, Leh is a perfect destination for nature lovers and adventure seekers alike. 
-    Whether you're traveling solo, with friends, families, or that special someone, Leh is a safe and economical destination. Explore the best tourist places in Leh with the best Leh tour packages to experience its breathtaking beauty and unforgettable memories. So, make sure to visit Leh and experience its secrets firsthand. `;
+  const ladakhdesc = `Leh, situated in northern India, is a sought-after dream destination for travelers from all over the world. 
+  With its high altitudes and numerous passes connecting various locations, this frozen paradise offers an unparalleled experience for adventure enthusiasts, 
+  families, couples, and solo travelers alike.
+  
+  While the harsh weather and difficult terrains can be a challenge, Leh's stunning beauty and unique landscape make it a must-visit destination. 
+  Despite its growing popularity, Leh remains sparsely crowded even during peak season, making it an ideal destination for those seeking a peaceful escape. 
+  
+  For photography enthusiasts, Leh is a paradise that offers a vast empty canvas to paint. 
+  The landscape here is unlike anywhere in India and worldwide, offering unimaginable sights that change every few kilometers. 
+  With turquoise blue lakes, beautifully constructed monasteries, and snow-covered mountains,
+  Leh is a perfect destination for nature lovers and adventure seekers alike.
+
+  Whether you're traveling solo, with friends, families, or that special someone, 
+  Leh is a safe and economical destination. Explore the best tourist places in Leh with the best Leh tour packages to experience its breathtaking beauty 
+  and unforgettable memories. So, make sure to visit Leh and experience its secrets firsthand.`;
 
   const maxLength = 350;
 
   if (ladakhdesc.length <= maxLength) {
-    return <p>{ladakhdesc}</p>;
+    return <p style={{ whiteSpace: "pre-wrap" }}>{ladakhdesc}</p>;
   }
 
   const truncatedText = isTruncated
@@ -36,8 +46,8 @@ export const LadakhTours = () => {
       <LadakhBanner />
       <LadakhBreadcrumb />
       <div className="flex justify-center items-center py-8 px-8">
-        <div className="container rounded shadow-md shadow-gray-800 px-2 py-2 leading-relaxed  first-letter:text-7xl first-letter:font-bold first-letter:text-blue-500 lg:text-md dark:first-letter:text-blue-500 first-letter:mr-3 first-letter:float-left">
-          {truncatedText}
+        <div className="container rounded shadow-md shadow-gray-800 px-2 py-2 leading-relaxed  first-letter:text-4xl first-letter:font-bold first-letter:text-blue-500 md:text-lg dark:first-letter:text-blue-500 first-letter:mr-2 text-center text-sm md:text-left">
+          <p style={{ whiteSpace: "pre-wrap" }}>{truncatedText}</p>
           <button
             className="text-blue-500 hover:text-blue-700 font-semibold mr-22"
             onClick={toggleIsTruncated}
