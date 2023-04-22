@@ -66,10 +66,10 @@ const Footer = () => {
                   Support
                 </h2>
                 <button className="text-base text-left hover:text-gray-400 leading-none text-gray-100">
-                  Call +91 9419977421
+                  Call +91 8800777421
                 </button>
                 <button className="text-base text-left hover:text-gray-400 leading-none text-gray-100">
-                  What's App +91 880077721
+                  What's App +91 8587044340
                 </button>
                 <button className="text-base text-left hover:text-gray-400 leading-none text-gray-100">
                   Email: ecoindiajourneys@gmail.com
