@@ -26,16 +26,12 @@ const Contact = () => {
   };
 
   return (
-    <form
-      ref={form}
-      onSubmit={sendEmail}
-      className="bg-gray-900 space-y-8"
-    >
+    <form ref={form} onSubmit={sendEmail} className="bg-gray-900 space-y-8">
       <div className="py-8 lg:py-12 px-4 mx-auto max-w-screen-md">
-        <h2 className="m-4 py-16 text-4xl tracking-tight font-extrabold text-center text-white">
+        <h2 className="m-8 py-12 text-2xl tracking-tight font-extrabold text-center text-white">
           Contact Us
         </h2>
-        <p className="mb-8 lg:mb-16 font-light text-center text-gray-500  sm:text-xl">
+        <p className="mb-8 lg:mb-12 font-light text-center text-gray-500 md:text-lg text-sm">
           Got a travel question? Need details about our tour programs and cost?
           Feel free to contact us.
         </p>
