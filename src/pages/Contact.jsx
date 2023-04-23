@@ -1,5 +1,6 @@
-import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import process from "process";
+import React, { useRef } from "react";
 
 const Contact = () => {
   const form = useRef();
@@ -9,10 +10,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_yree71c",
-        "template_e91a9va",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        "WBOhbe88gCCaMVVhA"
+        process.env.REACT_APP_PUBLIC_KEY
       )
       .then(
         (result) => {
@@ -22,7 +23,6 @@ const Contact = () => {
           console.log(error.text);
         }
       );
-    e.target.reset();
   };
 
   return (
@@ -44,8 +44,8 @@ const Contact = () => {
           </label>
           <input
             type="text"
-            id="name"
-            className="shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-2.5 text-white shadow-sm-light"
+            name="user_name"
+            className="shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-2.5 text-black shadow-sm-light"
             placeholder="Your Name"
             required
           />
@@ -59,8 +59,8 @@ const Contact = () => {
           </label>
           <input
             type="email"
-            id="email"
-            className="shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-2.5 text-white shadow-sm-light"
+            name="user_email"
+            className="shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-2.5 text-black shadow-sm-light"
             placeholder="Your Email"
             required
           />
@@ -74,8 +74,8 @@ const Contact = () => {
           </label>
           <input
             type="text"
-            id="subject"
-            className="block p-3 w-full text-sm bg-gray-50 rounded-lg border border-gray-300 shadow-sm text-white shadow-sm-light"
+            name="subject"
+            className="block p-3 w-full text-sm bg-gray-50 rounded-lg border border-gray-300 shadow-sm text-black shadow-sm-light"
             placeholder="Let us know how we can help you"
             required
           />
@@ -88,18 +88,17 @@ const Contact = () => {
             Your message
           </label>
           <textarea
-            id="message"
+            name="message"
             rows="6"
-            className="block p-2.5 w-full text-sm bg-gray-50 rounded-lg shadow-sm-light border text-white"
+            className="block p-2.5 w-full text-sm bg-gray-50 rounded-lg shadow-sm-light border text-black"
             placeholder="Leave a comment..."
           ></textarea>
         </div>
-        <button
+        <input
           type="submit"
+          value="Submit"
           className="w-full py-4 px-10 mt-4 text-sm font-semibold text-center text-white rounded-lg sm:w-fit  focus:ring-4 focus:outline-none bg-blue-500 hover:bg-blue-400 focus:ring-blue-700"
-        >
-          Submit
-        </button>
+        />
       </div>
     </form>
   );

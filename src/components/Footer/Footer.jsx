@@ -101,9 +101,11 @@ const Footer = () => {
                 Privacy Policy
               </Link>
 
-              <button className="text-base leading-none text-white hover:text-gray-300">
+              {/* <a href="/sitemap.xml"
+                className="text-base leading-none text-white hover:text-gray-300"
+              >
                 Sitemap
-              </button>
+              </a> */}
             </div>
             <div className="flex justify-start md:justify-end items-start w-full md:w-auto md:items-center space-x-6 ">
               <a

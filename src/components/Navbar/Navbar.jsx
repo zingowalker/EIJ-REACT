@@ -17,7 +17,10 @@ function classNames(...classes) {
 export default function Navbar() {
   const [drop, setDrop] = useState(false);
   return (
-    <Disclosure as="nav" className="bg-black fixed top-0 left-0 right-0 z-20">
+    <Disclosure
+      as="nav"
+      className="bg-black fixed top-0 left-0 right-0 z-20 shadow-lg shadow-blue-500/10"
+    >
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

@@ -15,6 +15,7 @@ import HimachalTourDetails from "./components/HimachalTourDetails/HimachalTourDe
 import SouthIndiaTours from "./pages/SouthIndiaTours/SouthIndiaTours";
 import SouthIndiaTourDetails from "./components/SouthIndiaTourDetails/SouthIndiaTourDetails";
 
+
 import "./App.css";
 
 function App() {
