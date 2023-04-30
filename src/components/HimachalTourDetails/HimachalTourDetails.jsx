@@ -10,7 +10,7 @@ const HimachalTourDetails = () => {
 
   const himachalTour = HIMACHAL.find((tour) => slugify(tour.title) === slug);
 
-  const { id, title, desc, src,  itinerary } = himachalTour;
+  const { id, title, desc, src, itinerary } = himachalTour;
 
   return (
     <>

@@ -138,13 +138,7 @@ const router = createBrowserRouter([
       {
         path: "South-India/:slug",
         element: (
-          <Suspense
-            fallback={
-              <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]">
-                Loading...
-              </div>
-            }
-          >
+          <Suspense fallback={<div>Loading...</div>}>
             <SouthIndiaTourDetails />
           </Suspense>
         ),
@@ -161,7 +155,7 @@ function App() {
 }
 
 export default App;
-{
+// {
   /* <div className="App">
       <BrowserRouter>
         <Routes>
@@ -191,4 +185,4 @@ export default App;
         </Routes>
       </BrowserRouter>
     </div> */
-}
+// }
