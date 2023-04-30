@@ -10,14 +10,15 @@ const HimachalTourDetails = () => {
 
   const himachalTour = HIMACHAL.find((tour) => slugify(tour.title) === slug);
 
-  const { id, title, desc, src, itinerary } = himachalTour;
+  const { id, title, desc, src, alt, itinerary } = himachalTour;
 
   return (
     <>
       <div className="mx-auto py-12">
         <div
-          className="bg-contain bg-center h-64 md:h-96"
+          className="bg-cover bg-center h-64 md:h-96"
           style={{ backgroundImage: `url(${src})` }}
+          alt={alt}
         >
           <div className="container mx-auto h-full flex flex-col items-center justify-center column">
             <h1 className="text-3xl md:text-5xl font-bold text-white text-center">

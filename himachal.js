@@ -31,6 +31,81 @@ const HIMACHAL = [
       },
     ],
   },
+  {
+    id: 2,
+    title: "Spiti Royal Enfield Adventure 11 Days",
+    desc: 'Spiti Valley is a high-altitude desert valley in the northeastern region of Himachal Pradesh, India. It is known as "The Middle Land" as it is situated between India and Tibet.',
+    src: "/images/Dhankar-spiti-india.jpg",
+    alt: "Dhankar village, Spiti in India",
+    tags: [
+      "Royal Enfield",
+      "Adventure",
+      "Kinner Kailash Range",
+      "Temples",
+      "Apple orchards",
+      "Scenic views",
+      "Monastries",
+      "Chandra Bhaga mountain range",
+    ],
+    highlights: "Highlights",
+    itinerary: [
+      {
+        heading: "Day 01: Arrive Manali",
+        description:
+          "Upon arrival in Manali you will be received by our tour representative. You will check into hotel in Manali. In the afternoon you will be introduced to the bikes and all details about the tour. A short tour of Manali to check and try your bikes. Overnight in hotel.",
+      },
+      {
+        heading: "Day 02: Manali – Banjar",
+        description:
+          "Embark on a Breathtaking Motorcycle Journey to Banjar Valley, also known as the 'Valley of Tranquility.' The valley's splendid scenery includes sparkling streams, serene lakes, lush meadows, and thick forests. The high mountain ranges and sprawling apple orchards add to the majestic hills covered with pine and deodar forests. Experience the heavenly beauty of Banjar Valley on your motorcycle tour.",
+      },
+      {
+        heading: "Day 03: Banjar - Sarahan",
+        description:
+          "Explore Kinnaur, the Land of Fairy Tales, on a Picturesque Motorcycle Tour. Admire the lush green valleys, orchards, vineyards, snow-clad peaks, and cold desert mountains that make up Kinnaur's spectacular terrain. With a unique culture and language, Kinnaur is rich in flora and fauna, offering a stunning glimpse of pastoral perfection. Discover the Bhimakali temple and its resplendent pahari hill-style architecture and intricate carvings, surrounded by small hamlets with slate-roofed houses. Immerse yourself in the beauty of this region with its apple orchards, gardens of rare medicinal herbs, and a variety of wildflowers.",
+      },
+      {
+        heading: "Day 04: Sarahan - Chitkul",
+        description:
+          "Today explore the Picturesque Sangla Valley on Your Way to Chitkul, the Last Inhabited Village Near the Indo-Tibet Border. Admire the Thick Forests, Apple Orchards, Rushing Waters, and Towering Himalayan Ranges that Surround You on Your Journey. Discover Chitkul's Renowned Houses with Slate or Wooden Plank Roofs, a Buddhist Temple, and a Small Tower",
+      },
+      {
+        heading: "Day 05: Chitkul - Kalpa",
+        description:
+          "Discover Kalpa, One of the Biggest and Most Beautiful Villages of Kinnaur, as You Travel Along Its Scenic Road. Nestled at 2758m Above Sea Level and 110km from Sarahan, Kalpa Offers Magnificent Views of the Kinner Kailash Range with Snowy Peaks Bathed in Crimson and Golden Light during Sunrise.",
+      },
+      {
+        heading: "Day 06: Kalpa - Nako - Tabo",
+        description:
+          "Ride to Nako, a charming village situated at 3600m altitude, and experience an amazing change of scenery on the way. From the green valleys, you'll move to the stark magnificence of the high cold desert. Visit the village's old temples with fine sculptures and frescoes founded in the 10th -11th century and take a walk near its beautiful holy lake. Head to Tabo and visit one of the most important Buddhist monasteries in the region. Tabo, founded in 996 CE, is the largest monastic complex of Spiti and has been declared a protected monument under the Archaeological Survey of India. It's the site where the 14th Dalai Lama held the Kalachakra ceremonies in 1983 and 1996.",
+      },
+      {
+        heading: "Day 07: Tabo - Kaza",
+        description:
+          'Prepare for an exciting journey to Kaza, the capital and regional headquarters of Spiti Valley, a cold desert where the monsoon never arrives. This unique destination is known for its narrow valleys, high mountains, and striking beauty, earning it the nickname "a world within a world" by Rudyard Kipling in his book Kim. Despite its dry, weathered terrain, Spiti still boasts patches of greenery, and its rugged landscape has been described as a place where the gods reside.',
+      },
+      {
+        heading: "Day 08: Kaza - Kibber - Komic - Kaza",
+        description:
+          "We'll ride from Kaza to Kibber, the highest village in Asia. Along the way, we'll visit the colorful Key Monastery, established in the 11th century. We'll also make a stop at Langza village to climb the large Buddha statue and enjoy the stunning views of Spiti valley. Afterward, we'll head to Komic and search for fossils near the streams. Finally, we'll return to Kaza.",
+      },
+      {
+        heading: "Day 09: Kaza - Chandratal Lake",
+        description:
+          'Get ready for the next awe-inspiring destination! We embark on a scenic journey towards the exquisite Chandratal Lake, also known as the "Moon Lake". Located at an elevation of 4300 m, this sweet water lake stretches for about 2.5 km and offers a mesmerizing view that changes with the colours of the sky. Encircled by the majestic Chandra Bhaga mountain range, the lake forms a picturesque backdrop that will leave you spellbound. Note that this natural wonder can only be accessed during the three summer months, as it remains frozen and inaccessible during the rest of the year. Don\'t miss the chance to witness this magical sight that will take your breath away.',
+      },
+      {
+        heading: "Day 10: Chandratal Lake - Manali",
+        description:
+          "Return to the town of Manali through the stunning Manali valley. Once you arrive, the rest of the day is yours to explore Manali and its surroundings, which are rich in natural and cultural treasures that will never cease to amaze you.",
+      },
+      {
+        heading: "Day 11: Manali (Departure)",
+        description:
+          "Thank you for choosing our tour package. We hope you had a wonderful time exploring the beautiful and diverse region of Himachal Pradesh. We wish you a safe journey back home and hope to see you again soon for another unforgettable adventure!",
+      },
+    ],
+  },
 ];
 
 export default HIMACHAL;

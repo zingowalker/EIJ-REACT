@@ -21,33 +21,33 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="Privacy-Policy" element={<PrivacyPolicy />} />
-            <Route
-              path="Cancellation-Policy"
-              element={<CancellationPolicy />}
-            />
-            <Route path="Terms-Of-Service" element={<TermsOfService />} />
-            <Route path="Destination/Ladakh" element={<LadakhTours />} />
-            <Route path="Ladakh/:slug" element={<LadakhTourDetails />} />
-            <Route path="Destination/Himachal" element={<HimachalTours />} />
-            <Route path="Himachal/:slug" element={<HimachalTourDetails />} />
-            <Route
-              path="Destination/South-India"
-              element={<SouthIndiaTours />}
-            />
-            <Route
-              path="South-India/:slug"
-              element={<SouthIndiaTourDetails />}
-            />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Home />} />
+              <Route path="about" element={<About />} />
+              <Route path="contact" element={<Contact />} />
+              <Route path="Privacy-Policy" element={<PrivacyPolicy />} />
+              <Route
+                path="Cancellation-Policy"
+                element={<CancellationPolicy />}
+              />
+              <Route path="Terms-Of-Service" element={<TermsOfService />} />
+              <Route path="Destination/Ladakh" element={<LadakhTours />} />
+              <Route path="Ladakh/:slug" element={<LadakhTourDetails />} />
+              <Route path="Destination/Himachal" element={<HimachalTours />} />
+              <Route path="Himachal/:slug" element={<HimachalTourDetails />} />
+              <Route
+                path="Destination/South-India"
+                element={<SouthIndiaTours />}
+              />
+              <Route
+                path="South-India/:slug"
+                element={<SouthIndiaTourDetails />}
+              />
+            </Route>
+          </Routes>
+        </BrowserRouter>
     </div>
   );
 }
