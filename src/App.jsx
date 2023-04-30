@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import { lazy, Suspense } from "react";
 // import Layout from "./pages/Layout.jsx";
-const Layout = lazy(() => import("./pages/Layout.jsx"));
+const Layout = lazy(() => import("./pages/Layout"));
 // import Home from "./pages/Home/Home";
 const Home = lazy(() => import("./pages/Home/Home"));
 // import About from "./pages/About";
@@ -156,7 +156,7 @@ function App() {
 
 export default App;
 // {
-  /* <div className="App">
+/* <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
