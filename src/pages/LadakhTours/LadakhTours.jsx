@@ -73,7 +73,7 @@ export const LadakhTours = () => {
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">{tour.title}</div>
               <p className="text-gray-700  text-base">
-                {tour.desc.substring(0, 150)}
+                {tour.desc.substring(0, 100)}
               </p>
               <Link
                 className="inline-flex items-center -mx-1 text-sm text-[#3195ff] capitalize transition-colors duration-300 transform dark:text-[#3195ff] hover:underline hover:text-red-500 dark:hover:text-red-500"

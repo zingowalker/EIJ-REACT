@@ -6,22 +6,11 @@ import slugify from "slugify";
 import LADAKH from "../../../ladakh.js";
 
 const LadakhTourDetails = () => {
-  // const navigate = useNavigate();
+
   const { slug } = useParams();
-  // const { pathname } = useLocation();
-
-  // get product
-  // const ladakhTour = LADAKH.find((tour) => tour.id == parseInt(tourId));
-
   const ladakhTour = LADAKH.find((tour) => slugify(tour.title) === slug);
-  // use == instead of === if useParams fails to get the id
-  // or just check data type or use parseInt(id)
-
-  // console.log(typeof(productId))
-
   const { id, title, desc, src, itinerary } = ladakhTour;
-  // console.log("tour id ", tourId);
-  // console.log("tour ", ladakhTour);
+
 
   return (
     <>
@@ -34,7 +23,7 @@ const LadakhTourDetails = () => {
             <h1 className="text-3xl md:text-5xl font-bold text-white text-center">
               {title}
             </h1>
-            <p className="text-[#fff] text-sm md:text-xl text-center mt-4">
+            <p className="text-[#fff] text-sm md:text-xl text-center mt-4 sm:block">
               {desc}
             </p>
           </div>
