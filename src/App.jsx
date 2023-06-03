@@ -1,11 +1,5 @@
-import {
-  createBrowserRouter,
-  BrowserRouter,
-  Routes,
-  Route,
-  RouterProvider,
-} from "react-router-dom";
-import Layout from "./pages/Layout.jsx";
+import { BrowserRouter, Routes, Route, RouterProvider } from "react-router-dom";
+import Layout from "./pages/Layout";
 import Home from "./pages/Home/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -23,7 +17,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>

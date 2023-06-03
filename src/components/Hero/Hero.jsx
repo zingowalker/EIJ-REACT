@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 function Hero() {
@@ -13,8 +12,9 @@ function Hero() {
                   Eco India Journeys
                 </span>
               </h2>
-              <h1 className="bg-gradient-to-l from-green-300 via-blue-500 to-purple-600 bg-clip-text text-4xl font-bold text-transparent md:text-6xl leading-1 tracking-tight sm:text-6xl">
-                Your Travel Agency
+              <h1 className="bg-gradient-to-l from-green-300 via-blue-500 to-purple-600 bg-clip-text text-4xl font-bold text-transparent md:text-6xl leading-1 tracking-tight lg:text-6xl sm:text-4xl">
+                Travel Agency, Ladakh, Kashmir, South India, Himachal and
+                More..
               </h1>
               <p className="mt-6 text-lg leading-loose text-white">
                 "Ready to explore India? Discover amazing destinations, indulge
