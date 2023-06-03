@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  font-family: "Poppins", sans-serif;
+.primaryColor h2 {
+  @apply text-[#008080];
+}
+
+.secondaryColor h1 {
+  @apply text-[#FFA500];
+}
+
+.accentColor {
+  @apply text-[#5F9EA0];
+}
+
+.neutralColor {
+  @apply text-[#333333];
 }
