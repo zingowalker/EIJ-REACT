@@ -1,32 +1,35 @@
-import emailjs from "@emailjs/browser";
-import process from "process";
-import React, { useRef } from "react";
+import React, { useState } from "react";
 
 const Contact = () => {
-  const form = useRef();
-
-  const sendEmail = (e) => {
+  const [status, setStatus] = useState("Submit");
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatus("Sending...");
 
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        form.current,
-        process.env.REACT_APP_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    const { name, email, subject, message } = e.target;
+
+    let details = {
+      name: name.value,
+      email: email.value,
+      subject: subject.value,
+      message: message.value,
+    };
+
+    let response = await fetch("http://localhost:5000/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
+    });
+
+    setStatus("Submit");
+    let result = await response.json();
+    alert(result.status);
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="bg-gray-900 space-y-8">
+    <form onSubmit={handleSubmit} className="bg-gray-900 space-y-8">
       <div className="py-8 lg:py-12 px-4 mx-auto max-w-screen-md">
         <h2 className="m-8 py-12 text-2xl tracking-tight font-extrabold text-center text-white">
           Contact Us
@@ -43,25 +46,25 @@ const Contact = () => {
             Name:
           </label>
           <input
-            type="text"
-            name="user_name"
             className="shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-2.5 text-black shadow-sm-light"
-            placeholder="Your Name"
+            type="text"
+            id="name"
             required
+            placeholder="Your Name"
           />
         </div>
         <div>
           <label
-            htmlFor="email"
             className="block m-2 text-sm font-medium text-gray-300"
+            htmlFor="email"
           >
             Email:
           </label>
           <input
-            type="email"
-            name="user_email"
             className="shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-2.5 text-black shadow-sm-light"
             placeholder="Your Email"
+            type="email"
+            id="email"
             required
           />
         </div>
@@ -73,10 +76,10 @@ const Contact = () => {
             Subject:
           </label>
           <input
-            type="text"
-            name="subject"
             className="block p-3 w-full text-sm bg-gray-50 rounded-lg border border-gray-300 shadow-sm text-black shadow-sm-light"
             placeholder="Let us know how we can help you"
+            type="text"
+            id="subject"
             required
           />
         </div>
@@ -88,17 +91,19 @@ const Contact = () => {
             Your message
           </label>
           <textarea
-            name="message"
             rows="6"
             className="block p-2.5 w-full text-sm bg-gray-50 rounded-lg shadow-sm-light border text-black"
             placeholder="Leave a comment..."
+            id="message"
+            required
           ></textarea>
         </div>
-        <input
+        <button
           type="submit"
-          value="Submit"
           className="w-full py-4 px-10 mt-4 text-sm font-semibold text-center text-white rounded-lg sm:w-fit  focus:ring-4 focus:outline-none bg-blue-500 hover:bg-blue-400 focus:ring-blue-700"
-        />
+        >
+          {status}
+        </button>
       </div>
     </form>
   );

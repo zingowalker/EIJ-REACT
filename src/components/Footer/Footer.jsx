@@ -16,7 +16,7 @@ const Footer = () => {
                   <img src="../images/logo.png" alt="logo" />
                 </a>
               </div>
-              <p className="w-60 text-lg xl:text-2xl font-semibold leading-normal bg-gradient-to-l from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+              <p className="w-60 sm:text-sm md:text-2xl font-semibold leading-normal text-white">
                 Eco India Journeys
               </p>
             </div>
