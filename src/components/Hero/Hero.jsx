@@ -2,23 +2,18 @@ import { Link } from "react-router-dom";
 
 function Hero() {
   return (
-    <section className="bg-white ">
+    <section className="bg-hero bg-cover bg-center bg-no-repeat opacity-75">
       <div className="w-full">
         <div className="relative isolate px-6 pt-14 lg:px-8">
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
             <div className="text-center">
-              <h2 className="text-2xl leading-6 text-center px-4 mb-4">
-                <span className="bg-clip-text text-transparent bg-gradient-to-l from-green-300 via-blue-500 to-purple-600 font-semibold">
-                  Eco India Journeys
-                </span>
-              </h2>
               <h1 className="text-4xl font-bold text-transparent md:text-6xl leading-1 tracking-tight sm:text-2xl">
-                <span className="bg-clip-text bg-gradient-to-l from-green-300 via-blue-500 to-purple-600">
+                <span className="text-white opacity-100 ">
                   Travel Agency, &nbsp;Ladakh, &nbsp;Kashmir, &nbsp;South India,
                   Himachal and More..
                 </span>
               </h1>
-              <p className="mt-6 text-md leading-loose text-gray-700">
+              <p className="mt-6 text-md leading-loose text-gray-200">
                 "Ready to explore India? Discover amazing destinations, indulge
                 in new experiences, and make unforgettable memories. Book your
                 holiday with us!"
