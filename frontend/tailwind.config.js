@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        hero: "url('../public/images/prayer-flag-bg.jpg')",
+        hero: "url('../images/prayer-flag-bg.jpg')",
       },
     },
   },
